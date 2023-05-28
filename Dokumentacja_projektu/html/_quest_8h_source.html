@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Shadow Paths: Plik źródłowy /home/omen/Programy/C++/Shadow_Paths/Quest.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Shadow Paths
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_661c9a78358d6ae2fcee2aa8181184d4.html">Programy</a></li><li class="navelem"><a class="el" href="dir_2933e10e6a64d66f602e9d69bb6ad8b5.html">C++</a></li><li class="navelem"><a class="el" href="dir_4670274700e77dda55ab504fcf9178e1.html">Shadow_Paths</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Quest.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SHADOW_PATHS_QUEST_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SHADOW_PATHS_QUEST_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;ctime&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Entity.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;SFML/Graphics.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">enum</span> battleFought {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    WON,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    LOST</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">enum</span> BossType {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    BANSHEE,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    GOBLIN_KING,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ABYSSAL_WATCHERS</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">enum</span> EnemyType {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    MOB,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    BOSS</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_quest.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_quest.html">Quest</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> goldAmount;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> expAmount;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> duration = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::string questName;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string questContent;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_player.html">Player</a> &amp;player;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    battleFought state;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    BossType type;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    EnemyType eType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_quest.html#a84313e8eb29d9bb60f0c0b7aa24d7272">Quest</a>(<a class="code" href="class_player.html">Player</a> &amp;player);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quest.html#a530bec1b2c8887898cbd5b96b7f8e539">generateQuest</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quest.html#a16c8b6ef25360976f80c29eaa7bf3f53">finishQuest</a>(<span class="keyword">const</span> std::string&amp; fight);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quest.html#a2f17598efbccf1445481aee6611c391f">handleQuest</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quest.html#a1eb7d1f8771c1b45a6b2f94bb947010d">updateQuest</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_quest.html#ae053a792ba477ef876d7e576b33f967b">handleDungeonFight</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::string <a class="code" href="class_quest.html#a080fe1dfc66af85d47bfc38daa65b538">getQuestName</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::string <a class="code" href="class_quest.html#a61b30c364e8356cfb95a3cdbce854922">getQuestContent</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_quest.html#a69e4d4e976571cd1ba45c1bb7d7d98d7">getGoldAmount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_quest.html#a979bbcf05ac5e3062c655f6ebd627f68">getExpAmount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_quest.html#a578ca8af63380b277b275a6c0cb5f2b8">getDuration</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_quest.html#ab840b29db9d1822b0d2dbb213ed787a1">getStatus</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    BossType <a class="code" href="class_quest.html#a5c7d850664fda08b69ac90b1b0afcdff">getBoss</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    EnemyType <a class="code" href="class_quest.html#ab140d75de756452e2109679fecf23992">getEnemy</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdef"><b>Definition:</b> Entity.h:8</div></div>
+<div class="ttc" id="aclass_quest_html"><div class="ttname"><a href="class_quest.html">Quest</a></div><div class="ttdoc">Klasa reprezentująca zadania i po części zarządzająca nagrodami.</div><div class="ttdef"><b>Definition:</b> Quest.h:32</div></div>
+<div class="ttc" id="aclass_quest_html_a080fe1dfc66af85d47bfc38daa65b538"><div class="ttname"><a href="class_quest.html#a080fe1dfc66af85d47bfc38daa65b538">Quest::getQuestName</a></div><div class="ttdeci">std::string getQuestName()</div><div class="ttdoc">Metoda zwraca nazwę zadania.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:121</div></div>
+<div class="ttc" id="aclass_quest_html_a16c8b6ef25360976f80c29eaa7bf3f53"><div class="ttname"><a href="class_quest.html#a16c8b6ef25360976f80c29eaa7bf3f53">Quest::finishQuest</a></div><div class="ttdeci">void finishQuest(const std::string &amp;fight)</div><div class="ttdoc">Metoda zakańcza zadanie i zależnie od wyniku walki modyfikuje ilości złota i doświadczenia gracza.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:94</div></div>
+<div class="ttc" id="aclass_quest_html_a1eb7d1f8771c1b45a6b2f94bb947010d"><div class="ttname"><a href="class_quest.html#a1eb7d1f8771c1b45a6b2f94bb947010d">Quest::updateQuest</a></div><div class="ttdeci">void updateQuest()</div><div class="ttdoc">Metoda uaktualnia zadanie.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:129</div></div>
+<div class="ttc" id="aclass_quest_html_a2f17598efbccf1445481aee6611c391f"><div class="ttname"><a href="class_quest.html#a2f17598efbccf1445481aee6611c391f">Quest::handleQuest</a></div><div class="ttdeci">void handleQuest()</div><div class="ttdoc">Metoda zarządza zadaniem.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:108</div></div>
+<div class="ttc" id="aclass_quest_html_a530bec1b2c8887898cbd5b96b7f8e539"><div class="ttname"><a href="class_quest.html#a530bec1b2c8887898cbd5b96b7f8e539">Quest::generateQuest</a></div><div class="ttdeci">void generateQuest()</div><div class="ttdoc">Metoda generuje zadania spośród czterech możliwych.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:29</div></div>
+<div class="ttc" id="aclass_quest_html_a578ca8af63380b277b275a6c0cb5f2b8"><div class="ttname"><a href="class_quest.html#a578ca8af63380b277b275a6c0cb5f2b8">Quest::getDuration</a></div><div class="ttdeci">int getDuration() const</div><div class="ttdoc">Metoda zwraca czas zadania.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:147</div></div>
+<div class="ttc" id="aclass_quest_html_a5c7d850664fda08b69ac90b1b0afcdff"><div class="ttname"><a href="class_quest.html#a5c7d850664fda08b69ac90b1b0afcdff">Quest::getBoss</a></div><div class="ttdeci">BossType getBoss() const</div><div class="ttdoc">Metoda zwraca rodzaj bossa.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:172</div></div>
+<div class="ttc" id="aclass_quest_html_a61b30c364e8356cfb95a3cdbce854922"><div class="ttname"><a href="class_quest.html#a61b30c364e8356cfb95a3cdbce854922">Quest::getQuestContent</a></div><div class="ttdeci">std::string getQuestContent()</div><div class="ttdoc">Metoda zwraca treść zadania.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:125</div></div>
+<div class="ttc" id="aclass_quest_html_a69e4d4e976571cd1ba45c1bb7d7d98d7"><div class="ttname"><a href="class_quest.html#a69e4d4e976571cd1ba45c1bb7d7d98d7">Quest::getGoldAmount</a></div><div class="ttdeci">int getGoldAmount() const</div><div class="ttdoc">Metoda zwraca ilość złota za zadanie.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:139</div></div>
+<div class="ttc" id="aclass_quest_html_a84313e8eb29d9bb60f0c0b7aa24d7272"><div class="ttname"><a href="class_quest.html#a84313e8eb29d9bb60f0c0b7aa24d7272">Quest::Quest</a></div><div class="ttdeci">Quest(Player &amp;player)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:80</div></div>
+<div class="ttc" id="aclass_quest_html_a979bbcf05ac5e3062c655f6ebd627f68"><div class="ttname"><a href="class_quest.html#a979bbcf05ac5e3062c655f6ebd627f68">Quest::getExpAmount</a></div><div class="ttdeci">int getExpAmount() const</div><div class="ttdoc">Metoda zwraca ilość doświadczenia za zadanie.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:143</div></div>
+<div class="ttc" id="aclass_quest_html_ab140d75de756452e2109679fecf23992"><div class="ttname"><a href="class_quest.html#ab140d75de756452e2109679fecf23992">Quest::getEnemy</a></div><div class="ttdeci">EnemyType getEnemy() const</div><div class="ttdoc">Metoda zwraca rodzaj przeciwnika.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:176</div></div>
+<div class="ttc" id="aclass_quest_html_ab840b29db9d1822b0d2dbb213ed787a1"><div class="ttname"><a href="class_quest.html#ab840b29db9d1822b0d2dbb213ed787a1">Quest::getStatus</a></div><div class="ttdeci">int getStatus() const</div><div class="ttdoc">Metoda zwraca status zadania.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:151</div></div>
+<div class="ttc" id="aclass_quest_html_ae053a792ba477ef876d7e576b33f967b"><div class="ttname"><a href="class_quest.html#ae053a792ba477ef876d7e576b33f967b">Quest::handleDungeonFight</a></div><div class="ttdeci">void handleDungeonFight()</div><div class="ttdoc">Metoda zarządza walką z bossem.</div><div class="ttdef"><b>Definition:</b> Quest.cpp:155</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,95 @@
+\doxysection{Dokumentacja klasy Game\+View}
+\label{class_game_view}\index{GameView@{GameView}}
+
+
+\doxyref{Klasa}{str.}{class_klasa} za pomocą której, wyśiwetlany jest ogólny widok gry.  
+
+
+
+
+{\ttfamily \#include $<$Game\+View.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_game_view_af6cfcc5c6a6aaba43edc40258ef7c10a}} 
+\textbf{ Game\+View} (\textbf{ Quest} \&quest, \textbf{ Player} \&player, \textbf{ Merchant} \&merchant)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a936c3f6eb9a6097b6ebf02abc6f6acff}} 
+void \textbf{ set\+Menu\+Font} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia czcionki i teksty menu. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a39ef7574494f17e53c25155ae486e19c}} 
+void \textbf{ draw\+Menu} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie menu gry. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a3a798d0e1ea55aff71faa6ae1a91eca1}} 
+void \textbf{ draw\+How\+To\+Play} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlenie instrukcji do gry. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a540f779b62c9625429c776cd59fcf65f}} 
+void \textbf{ draw\+Left\+Bar} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie paska wyboru w grze. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a83115be22dc87b84face407578997c6b}} 
+void \textbf{ draw\+Fire\+Place} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie ogniska. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a17882083bb1cbb2e7fb47c217e7832ad}} 
+void \textbf{ draw\+Background} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie tła. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a00a236799e7330a37700799c350a9e4f}} 
+void \textbf{ set\+Game\+Font} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda ustawia czcionki i teksty w grze. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_af801b4cff77398e9a7c5751d1eafd8ba}} 
+void \textbf{ draw\+Black\+Smith} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie kowala. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a9f1650e647324d4bb665fce80d2ecf2a}} 
+void \textbf{ draw\+Alchemist} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie alchemistki. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a2d7e8b6adeef2a2bd170958cdd4e2ea8}} 
+void \textbf{ draw\+Character} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie postaci gracza i jej statystyk. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a22c2c02875bfaf062506f87d4025dd36}} 
+void \textbf{ draw\+NPC} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie postaci rycerza przy ognisku. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a5a0a0528ef37013c9c09f8d17be08b24}} 
+void \textbf{ draw\+Npc\+Bar} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie okna dialogowego z postacią \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a9bfd11c98b7b5cefbda76bb9ee405ca6}} 
+void \textbf{ draw\+Quest\+Text} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie nazwy zadania, jego treści, ilości złota i doświadczenia. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a82252eac05e903b7b91dcc623b82f669}} 
+void \textbf{ draw\+Quest} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie tła zadania i licznika czasu. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a8f4482939230a759ff94d08d4a08db16}} 
+void \textbf{ draw\+After\+Fight\+Com} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie komunikatu po walce. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a4e8336bfd6dd8ea2958fbec500ee4a40}} 
+void \textbf{ draw\+Dungeon} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie widoku lochów. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a27e9450e320e9e75fed1a020b32edb85}} 
+void \textbf{ draw\+Fight} (\textbf{ Enemy} \&enemy, sf\+::\+Render\+Window \&window, Boss\+Type type, int mode)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie i odświeżanie ekranu walki. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a29b33e9ac38a5971e65e097e63df1a11}} 
+void \textbf{ draw\+Monster\+Attack} (sf\+::\+Render\+Window \&window, \textbf{ Enemy} \&enemy, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie animacji ataku wroga. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a3aace56416ef1c5053cbd63936e4c6b0}} 
+void \textbf{ draw\+Potion\+Drink} (sf\+::\+Render\+Window \&window, \textbf{ Enemy} \&enemy, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za animację picia mikstury. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_aa14c38b7979a8fd16f32ea897d70389a}} 
+void \textbf{ draw\+Boss\+Ability} (sf\+::\+Render\+Window \&window, \textbf{ Boss} \&boss, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie animacji użycia umiejętności bossa. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_aa925fa58b14188cbae63a92c09cc73db}} 
+void \textbf{ draw\+Player\+Attack} (sf\+::\+Render\+Window \&window, float delta\+Time, float initial\+PosX, \textbf{ Enemy} \&enemy, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za animację i wyświetlanie ataku gracza. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a163f720c17e98dabe7087083a95d5406}} 
+void \textbf{ draw\+Enemy\+Damage\+Points} (sf\+::\+Render\+Window \&window, \textbf{ Enemy} \&enemy, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiada za wyświetlanie ilości obrażeń otrzymanych przez przeciwnika. \end{DoxyCompactList}\item 
+\mbox{\label{class_game_view_a8f93a6ffb8186c5aada2edd8bf7bf8ba}} 
+void \textbf{ draw\+Player\+Damage\+Points} (sf\+::\+Render\+Window \&window, \textbf{ Enemy} \&enemy, Boss\+Type type)
+\begin{DoxyCompactList}\small\item\em Metoda opowiada za wyświetlanie ilości obrażeń otrzymanych przez gracza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+\doxyref{Klasa}{str.}{class_klasa} za pomocą której, wyśiwetlany jest ogólny widok gry. 
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+/home/omen/\+Programy/\+C++/\+Shadow\+\_\+\+Paths/Game\+View.\+h\item 
+/home/omen/\+Programy/\+C++/\+Shadow\+\_\+\+Paths/Game\+View.\+cpp\end{DoxyCompactItemize}

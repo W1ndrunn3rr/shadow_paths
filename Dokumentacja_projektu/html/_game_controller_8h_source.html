@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Shadow Paths: Plik źródłowy /home/omen/Programy/C++/Shadow_Paths/GameController.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Shadow Paths
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_661c9a78358d6ae2fcee2aa8181184d4.html">Programy</a></li><li class="navelem"><a class="el" href="dir_2933e10e6a64d66f602e9d69bb6ad8b5.html">C++</a></li><li class="navelem"><a class="el" href="dir_4670274700e77dda55ab504fcf9178e1.html">Shadow_Paths</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameController.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by omen on 28.04.23.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SHADOW_PATHS_GAMECONTROLLER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SHADOW_PATHS_GAMECONTROLLER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Merchant.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Entity.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GameView.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Quest.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> GameStatus {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    MENU,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    IN_GAME,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    HTP,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    EXIT,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">enum</span> GameLocation {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    BONFIRE,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BLACKSMITH,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ALCHEMIST,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    CHARACTER,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    DUNGEON,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">enum</span> QuestLocation {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    NOT_IN_QUEST,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    CHOICE,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    IN_QUEST,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    COMPLETED</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">enum</span> DungeonStatus {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    IN_DUNGEON,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    NOT_IN_DUNGEON,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    DUNGEON_COMPLETED</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_game_controller.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_game_controller.html">GameController</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    GameLocation location;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    GameStatus status;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QuestLocation questLocation;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    DungeonStatus dgStatus;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sf::Vector2i mousePosition;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_player.html">Player</a> &amp;player;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_merchant.html">Merchant</a> &amp;merchant;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_game_view.html">GameView</a> &amp;view;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_quest.html">Quest</a> &amp;quest;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> isMouseClicked; <span class="comment">//pomocniczy bool do eventów SFMLa</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_game_controller.html#a0f8900fcdd34eb577b6b9349685c17ba">GameController</a>(<a class="code" href="class_player.html">Player</a> &amp;player, <a class="code" href="class_merchant.html">Merchant</a> &amp;merchant, <a class="code" href="class_game_view.html">GameView</a> &amp;view, <a class="code" href="class_quest.html">Quest</a> &amp;quest);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#ad12606ea8166405fea1329de0f67c858">handleGameEvent</a>(sf::Event &amp;event, sf::RenderWindow &amp;window);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_game_controller.html#a3e8913395fec062be3ae61402d95e2df">manageGameView</a>(sf::RenderWindow &amp;window);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SHADOW_PATHS_GAMECONTROLLER_H</span></div>
+<div class="ttc" id="aclass_game_controller_html"><div class="ttname"><a href="class_game_controller.html">GameController</a></div><div class="ttdoc">Klasa kontrolująca grę</div><div class="ttdef"><b>Definition:</b> GameController.h:46</div></div>
+<div class="ttc" id="aclass_game_controller_html_a0f8900fcdd34eb577b6b9349685c17ba"><div class="ttname"><a href="class_game_controller.html#a0f8900fcdd34eb577b6b9349685c17ba">GameController::GameController</a></div><div class="ttdeci">GameController(Player &amp;player, Merchant &amp;merchant, GameView &amp;view, Quest &amp;quest)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:114</div></div>
+<div class="ttc" id="aclass_game_controller_html_a3e8913395fec062be3ae61402d95e2df"><div class="ttname"><a href="class_game_controller.html#a3e8913395fec062be3ae61402d95e2df">GameController::manageGameView</a></div><div class="ttdeci">void manageGameView(sf::RenderWindow &amp;window)</div><div class="ttdoc">Obsługa widoku gry i ekranu.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:126</div></div>
+<div class="ttc" id="aclass_game_controller_html_ad12606ea8166405fea1329de0f67c858"><div class="ttname"><a href="class_game_controller.html#ad12606ea8166405fea1329de0f67c858">GameController::handleGameEvent</a></div><div class="ttdeci">void handleGameEvent(sf::Event &amp;event, sf::RenderWindow &amp;window)</div><div class="ttdoc">Obsługa zdarzeń w trakcie gry.</div><div class="ttdef"><b>Definition:</b> GameController.cpp:6</div></div>
+<div class="ttc" id="aclass_game_view_html"><div class="ttname"><a href="class_game_view.html">GameView</a></div><div class="ttdoc">Klasa za pomocą której, wyśiwetlany jest ogólny widok gry.</div><div class="ttdef"><b>Definition:</b> GameView.h:11</div></div>
+<div class="ttc" id="aclass_merchant_html"><div class="ttname"><a href="class_merchant.html">Merchant</a></div><div class="ttdoc">Klasa reprezentuje handlarza.</div><div class="ttdef"><b>Definition:</b> Merchant.h:9</div></div>
+<div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdef"><b>Definition:</b> Entity.h:8</div></div>
+<div class="ttc" id="aclass_quest_html"><div class="ttname"><a href="class_quest.html">Quest</a></div><div class="ttdoc">Klasa reprezentująca zadania i po części zarządzająca nagrodami.</div><div class="ttdef"><b>Definition:</b> Quest.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

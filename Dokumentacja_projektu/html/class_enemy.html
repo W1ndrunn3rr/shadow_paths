@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Shadow Paths: Dokumentacja klasy Enemy</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Shadow Paths
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="class_enemy-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Enemy</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Dziedziczna klasa, klasy <a class="el" href="class_player.html">Player</a> - opisuje przeciwników.  
+ <a href="class_enemy.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_entity_8h_source.html">Entity.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla Enemy</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_enemy.png" usemap="#Enemy_map" alt=""/>
+  <map id="Enemy_map" name="Enemy_map">
+<area href="class_player.html" alt="Player" shape="rect" coords="120,0,230,24"/>
+<area href="class_boss.html" title="Klasa dziedziczna po klasie Enemy i jej pochodne (reprezentacja Bossów)" alt="Boss" shape="rect" coords="120,112,230,136"/>
+<area href="class_abyssal_watchers.html" alt="AbyssalWatchers" shape="rect" coords="0,168,110,192"/>
+<area href="class_banshee.html" alt="Banshee" shape="rect" coords="120,168,230,192"/>
+<area href="class_goblin_king.html" alt="GoblinKing" shape="rect" coords="240,168,350,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a2eaed87ebf79226cf0f28b129c8ab570"><td class="memItemLeft" align="right" valign="top"><a id="a2eaed87ebf79226cf0f28b129c8ab570"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a2eaed87ebf79226cf0f28b129c8ab570">Enemy</a> (int arm, int maxHP, std::string name, int max, int min, <a class="el" href="class_player.html">Player</a> &amp;player, int criticalChance, int dex)</td></tr>
+<tr class="memdesc:a2eaed87ebf79226cf0f28b129c8ab570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_enemy.html" title="Dziedziczna klasa, klasy Player - opisuje przeciwników.">Enemy</a>. <br /></td></tr>
+<tr class="separator:a2eaed87ebf79226cf0f28b129c8ab570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b5de4d12b6fbef200107815c78f911"><td class="memItemLeft" align="right" valign="top"><a id="a33b5de4d12b6fbef200107815c78f911"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#a33b5de4d12b6fbef200107815c78f911">getName</a> ()</td></tr>
+<tr class="memdesc:a33b5de4d12b6fbef200107815c78f911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca nazwę przeciwnika. <br /></td></tr>
+<tr class="separator:a33b5de4d12b6fbef200107815c78f911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_player"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_player')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_player.html">Player</a></td></tr>
+<tr class="memitem:affe0cc3cb714f6deb4e62f0c0d3f1fd8 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="affe0cc3cb714f6deb4e62f0c0d3f1fd8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</a> ()</td></tr>
+<tr class="memdesc:affe0cc3cb714f6deb4e62f0c0d3f1fd8 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor bazowy. <br /></td></tr>
+<tr class="separator:affe0cc3cb714f6deb4e62f0c0d3f1fd8 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0d5551086ebf6b5e4407d98697f8e0 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a1d0d5551086ebf6b5e4407d98697f8e0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1d0d5551086ebf6b5e4407d98697f8e0">getLevel</a> () const</td></tr>
+<tr class="memdesc:a1d0d5551086ebf6b5e4407d98697f8e0 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca poziom gracza. <br /></td></tr>
+<tr class="separator:a1d0d5551086ebf6b5e4407d98697f8e0 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8eaab3b610debd175d424823e4af144 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="af8eaab3b610debd175d424823e4af144"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af8eaab3b610debd175d424823e4af144">getGold</a> () const</td></tr>
+<tr class="memdesc:af8eaab3b610debd175d424823e4af144 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca złoto gracza. <br /></td></tr>
+<tr class="separator:af8eaab3b610debd175d424823e4af144 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfc3621014091acc5901093b8e5373f inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a3cfc3621014091acc5901093b8e5373f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a3cfc3621014091acc5901093b8e5373f">getWeaponLevel</a> () const</td></tr>
+<tr class="memdesc:a3cfc3621014091acc5901093b8e5373f inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca poziom broni gracza. <br /></td></tr>
+<tr class="separator:a3cfc3621014091acc5901093b8e5373f inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44dbee9d3693ada0a39d8c812d594729 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a44dbee9d3693ada0a39d8c812d594729"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a44dbee9d3693ada0a39d8c812d594729">getArmorLevel</a> () const</td></tr>
+<tr class="memdesc:a44dbee9d3693ada0a39d8c812d594729 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca poziom pancerza gracza. <br /></td></tr>
+<tr class="separator:a44dbee9d3693ada0a39d8c812d594729 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83714acb54f1c7286891843ae293e677 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a83714acb54f1c7286891843ae293e677"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a83714acb54f1c7286891843ae293e677">getPotions</a> () const</td></tr>
+<tr class="memdesc:a83714acb54f1c7286891843ae293e677 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość mikstur gracza. <br /></td></tr>
+<tr class="separator:a83714acb54f1c7286891843ae293e677 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac40848f0bdcdb537638c8ef704d7cd1 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="aac40848f0bdcdb537638c8ef704d7cd1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aac40848f0bdcdb537638c8ef704d7cd1">getShards</a> () const</td></tr>
+<tr class="memdesc:aac40848f0bdcdb537638c8ef704d7cd1 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość odłamków gracza. <br /></td></tr>
+<tr class="separator:aac40848f0bdcdb537638c8ef704d7cd1 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800824dc60a82e0c60361a764c5ab411 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a800824dc60a82e0c60361a764c5ab411"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a800824dc60a82e0c60361a764c5ab411">getPotionsLevel</a> () const</td></tr>
+<tr class="memdesc:a800824dc60a82e0c60361a764c5ab411 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca poziom mikstur gracza. <br /></td></tr>
+<tr class="separator:a800824dc60a82e0c60361a764c5ab411 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad527d6ed6e22851b0e58455ad1d602da inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ad527d6ed6e22851b0e58455ad1d602da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad527d6ed6e22851b0e58455ad1d602da">getCurrentHealth</a> () const</td></tr>
+<tr class="memdesc:ad527d6ed6e22851b0e58455ad1d602da inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca obecny poziom zdrowia gracza. <br /></td></tr>
+<tr class="separator:ad527d6ed6e22851b0e58455ad1d602da inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe8dac9940373d7fc0690267ea594dd inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="adbe8dac9940373d7fc0690267ea594dd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#adbe8dac9940373d7fc0690267ea594dd">getExperiencePoints</a> () const</td></tr>
+<tr class="memdesc:adbe8dac9940373d7fc0690267ea594dd inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość punktów doświadczenia gracza. <br /></td></tr>
+<tr class="separator:adbe8dac9940373d7fc0690267ea594dd inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39cacb2c57f93c7605b4bd5ba8719f8 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ab39cacb2c57f93c7605b4bd5ba8719f8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ab39cacb2c57f93c7605b4bd5ba8719f8">getMinDamage</a> () const</td></tr>
+<tr class="memdesc:ab39cacb2c57f93c7605b4bd5ba8719f8 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca minimalną ilość obrażeń gracza. <br /></td></tr>
+<tr class="separator:ab39cacb2c57f93c7605b4bd5ba8719f8 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6db22a2a752f0c3971658422c9faa63 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="af6db22a2a752f0c3971658422c9faa63"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af6db22a2a752f0c3971658422c9faa63">getMaxDamage</a> () const</td></tr>
+<tr class="memdesc:af6db22a2a752f0c3971658422c9faa63 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca maksymalną ilość obrażeń gracza. <br /></td></tr>
+<tr class="separator:af6db22a2a752f0c3971658422c9faa63 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c84d4b3d9ac5a91d77b0a979ee9e670 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a7c84d4b3d9ac5a91d77b0a979ee9e670"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a7c84d4b3d9ac5a91d77b0a979ee9e670">getArmor</a> () const</td></tr>
+<tr class="memdesc:a7c84d4b3d9ac5a91d77b0a979ee9e670 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca wartość pancerza gracza. <br /></td></tr>
+<tr class="separator:a7c84d4b3d9ac5a91d77b0a979ee9e670 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a0506d7271d24c9c9a54e47646bb6b inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a24a0506d7271d24c9c9a54e47646bb6b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a24a0506d7271d24c9c9a54e47646bb6b">getMaxHealth</a> () const</td></tr>
+<tr class="memdesc:a24a0506d7271d24c9c9a54e47646bb6b inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca maksymalne zdrowie gracza. <br /></td></tr>
+<tr class="separator:a24a0506d7271d24c9c9a54e47646bb6b inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9320b951cf9527f59ac72711cff3c9a inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="aa9320b951cf9527f59ac72711cff3c9a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aa9320b951cf9527f59ac72711cff3c9a">getDexterity</a> () const</td></tr>
+<tr class="memdesc:aa9320b951cf9527f59ac72711cff3c9a inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość zręczności gracza. <br /></td></tr>
+<tr class="separator:aa9320b951cf9527f59ac72711cff3c9a inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a95d993a935d0b26bedf96d7e8515c8 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a5a95d993a935d0b26bedf96d7e8515c8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a5a95d993a935d0b26bedf96d7e8515c8">getLuck</a> () const</td></tr>
+<tr class="memdesc:a5a95d993a935d0b26bedf96d7e8515c8 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość szczęścia gracza. <br /></td></tr>
+<tr class="separator:a5a95d993a935d0b26bedf96d7e8515c8 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b04aebfe7833974f6c5f9cda670e27 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a97b04aebfe7833974f6c5f9cda670e27"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a97b04aebfe7833974f6c5f9cda670e27">getDamageDone</a> () const</td></tr>
+<tr class="memdesc:a97b04aebfe7833974f6c5f9cda670e27 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca otrzymane obrażenia przez gracza. <br /></td></tr>
+<tr class="separator:a97b04aebfe7833974f6c5f9cda670e27 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4361bdddf214d12b7683cbaa2021b94b inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a4361bdddf214d12b7683cbaa2021b94b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a4361bdddf214d12b7683cbaa2021b94b">takeDamage</a> (int damagePoints)</td></tr>
+<tr class="memdesc:a4361bdddf214d12b7683cbaa2021b94b inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modyfikacja ilości zdrowia. <br /></td></tr>
+<tr class="separator:a4361bdddf214d12b7683cbaa2021b94b inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0801c6651faf3f4156bec7bf7032a5da inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a0801c6651faf3f4156bec7bf7032a5da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a0801c6651faf3f4156bec7bf7032a5da">dealDamage</a> ()</td></tr>
+<tr class="memdesc:a0801c6651faf3f4156bec7bf7032a5da inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość obrażeń <br /></td></tr>
+<tr class="separator:a0801c6651faf3f4156bec7bf7032a5da inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bda3bad89f797546360636deb154fbb inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a5bda3bad89f797546360636deb154fbb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a5bda3bad89f797546360636deb154fbb">levelUp</a> ()</td></tr>
+<tr class="memdesc:a5bda3bad89f797546360636deb154fbb inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa poziom gracza. <br /></td></tr>
+<tr class="separator:a5bda3bad89f797546360636deb154fbb inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacfd80ee2b859b2340daf15c21a0d3d inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="acacfd80ee2b859b2340daf15c21a0d3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#acacfd80ee2b859b2340daf15c21a0d3d">getPotion</a> ()</td></tr>
+<tr class="memdesc:acacfd80ee2b859b2340daf15c21a0d3d inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zarządza ilością mikstur. <br /></td></tr>
+<tr class="separator:acacfd80ee2b859b2340daf15c21a0d3d inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277fab9cb21ead44675de79e36c76cc3 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a277fab9cb21ead44675de79e36c76cc3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a277fab9cb21ead44675de79e36c76cc3">potionLevelUp</a> ()</td></tr>
+<tr class="memdesc:a277fab9cb21ead44675de79e36c76cc3 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zarządza poziomem ulepszenia mikstury. <br /></td></tr>
+<tr class="separator:a277fab9cb21ead44675de79e36c76cc3 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd30407e24b5cb0d280bc7e1c7862e3b inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="abd30407e24b5cb0d280bc7e1c7862e3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#abd30407e24b5cb0d280bc7e1c7862e3b">weaponLevelUp</a> ()</td></tr>
+<tr class="memdesc:abd30407e24b5cb0d280bc7e1c7862e3b inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa poziom miecza. <br /></td></tr>
+<tr class="separator:abd30407e24b5cb0d280bc7e1c7862e3b inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e1cb35711151c61ff279a97cfab5c5 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a10e1cb35711151c61ff279a97cfab5c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a10e1cb35711151c61ff279a97cfab5c5">armorLevelUp</a> ()</td></tr>
+<tr class="memdesc:a10e1cb35711151c61ff279a97cfab5c5 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa poziom pancerza. <br /></td></tr>
+<tr class="separator:a10e1cb35711151c61ff279a97cfab5c5 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299f4f2146f47c43df61c42182796a58 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a299f4f2146f47c43df61c42182796a58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a299f4f2146f47c43df61c42182796a58">gainGold</a> (int gold)</td></tr>
+<tr class="memdesc:a299f4f2146f47c43df61c42182796a58 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa ilość złota o pewną ilość <br /></td></tr>
+<tr class="separator:a299f4f2146f47c43df61c42182796a58 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7055cb99ac328c9d1173994ee13bf4 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a1d7055cb99ac328c9d1173994ee13bf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1d7055cb99ac328c9d1173994ee13bf4">gainExp</a> (int exp)</td></tr>
+<tr class="memdesc:a1d7055cb99ac328c9d1173994ee13bf4 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa ilość doświadczenia postaci. <br /></td></tr>
+<tr class="separator:a1d7055cb99ac328c9d1173994ee13bf4 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd23413359137553bc51c1a234a014ff inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="abd23413359137553bc51c1a234a014ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#abd23413359137553bc51c1a234a014ff">gainShard</a> (int shard)</td></tr>
+<tr class="memdesc:abd23413359137553bc51c1a234a014ff inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwiększa ilość odłamków o zadaną ilość <br /></td></tr>
+<tr class="separator:abd23413359137553bc51c1a234a014ff inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ff98bcbf32900ff4ae379403a801b0 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a38ff98bcbf32900ff4ae379403a801b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a38ff98bcbf32900ff4ae379403a801b0">usePotion</a> ()</td></tr>
+<tr class="memdesc:a38ff98bcbf32900ff4ae379403a801b0 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda używa miksturę, przywracając zdrowie. <br /></td></tr>
+<tr class="separator:a38ff98bcbf32900ff4ae379403a801b0 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89bce01b6039d6f7fb56a550dda4773 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ac89bce01b6039d6f7fb56a550dda4773"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ac89bce01b6039d6f7fb56a550dda4773">setStats</a> ()</td></tr>
+<tr class="memdesc:ac89bce01b6039d6f7fb56a550dda4773 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizuje statystyki gracza. <br /></td></tr>
+<tr class="separator:ac89bce01b6039d6f7fb56a550dda4773 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6176778ca7783dbab480b62a33ca795 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="ad6176778ca7783dbab480b62a33ca795"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ad6176778ca7783dbab480b62a33ca795">setArmor</a> (int armorPoints)</td></tr>
+<tr class="memdesc:ad6176778ca7783dbab480b62a33ca795 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda modyfikuje pancerz gracza. <br /></td></tr>
+<tr class="separator:ad6176778ca7783dbab480b62a33ca795 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20665e4647baa8f898a62021e6204450 inherit pub_methods_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a20665e4647baa8f898a62021e6204450"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a20665e4647baa8f898a62021e6204450">isDead</a> () const</td></tr>
+<tr class="memdesc:a20665e4647baa8f898a62021e6204450 inherit pub_methods_class_player"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdza, czy postać żyje. <br /></td></tr>
+<tr class="separator:a20665e4647baa8f898a62021e6204450 inherit pub_methods_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:ad16d2c4150a6d47b82f83b735598796b"><td class="memItemLeft" align="right" valign="top"><a id="ad16d2c4150a6d47b82f83b735598796b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mobName</b></td></tr>
+<tr class="separator:ad16d2c4150a6d47b82f83b735598796b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_player"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_player')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_player.html">Player</a></td></tr>
+<tr class="memitem:a433fa478597adbefe4ac3911c5639968 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a433fa478597adbefe4ac3911c5639968"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>damage</b></td></tr>
+<tr class="separator:a433fa478597adbefe4ac3911c5639968 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174632f32507404d0f5ba85b9a88ff25 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a174632f32507404d0f5ba85b9a88ff25"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>baseDamage</b></td></tr>
+<tr class="separator:a174632f32507404d0f5ba85b9a88ff25 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45308e3a68365c39812b978f9250fa96 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a45308e3a68365c39812b978f9250fa96"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>maxDamage</b></td></tr>
+<tr class="separator:a45308e3a68365c39812b978f9250fa96 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41aea1fc6108ba66cc51c868fc0fafc6 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a41aea1fc6108ba66cc51c868fc0fafc6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>armor</b></td></tr>
+<tr class="separator:a41aea1fc6108ba66cc51c868fc0fafc6 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2196f0d382a1d97c739a036781b2316b inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a2196f0d382a1d97c739a036781b2316b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>maxHealth</b></td></tr>
+<tr class="separator:a2196f0d382a1d97c739a036781b2316b inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe15944833f1453966e1149e4d30da5 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="adfe15944833f1453966e1149e4d30da5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentHealth</b></td></tr>
+<tr class="separator:adfe15944833f1453966e1149e4d30da5 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79038ce13df61e3199d7f9b63f910a98 inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a79038ce13df61e3199d7f9b63f910a98"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>luck</b></td></tr>
+<tr class="separator:a79038ce13df61e3199d7f9b63f910a98 inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1313fc5be248f223f0beef3cd0d6ad4f inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="a1313fc5be248f223f0beef3cd0d6ad4f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dexterity</b></td></tr>
+<tr class="separator:a1313fc5be248f223f0beef3cd0d6ad4f inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc91bf913efacadd695e7246b8c067f inherit pro_attribs_class_player"><td class="memItemLeft" align="right" valign="top"><a id="aafc91bf913efacadd695e7246b8c067f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>previousHealth</b></td></tr>
+<tr class="separator:aafc91bf913efacadd695e7246b8c067f inherit pro_attribs_class_player"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Dziedziczna klasa, klasy <a class="el" href="class_player.html">Player</a> - opisuje przeciwników. </p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/omen/Programy/C++/Shadow_Paths/<a class="el" href="_entity_8h_source.html">Entity.h</a></li>
+<li>/home/omen/Programy/C++/Shadow_Paths/Entity.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

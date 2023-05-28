@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Shadow Paths: Dokumentacja klasy Quest</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Shadow Paths
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_quest-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Quest</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="class_klasa.html" title="gracza i jego statystyki">Klasa</a> reprezentująca zadania i po części zarządzająca nagrodami.  
+ <a href="class_quest.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_quest_8h_source.html">Quest.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a84313e8eb29d9bb60f0c0b7aa24d7272"><td class="memItemLeft" align="right" valign="top"><a id="a84313e8eb29d9bb60f0c0b7aa24d7272"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a84313e8eb29d9bb60f0c0b7aa24d7272">Quest</a> (<a class="el" href="class_player.html">Player</a> &amp;player)</td></tr>
+<tr class="memdesc:a84313e8eb29d9bb60f0c0b7aa24d7272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor. <br /></td></tr>
+<tr class="separator:a84313e8eb29d9bb60f0c0b7aa24d7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530bec1b2c8887898cbd5b96b7f8e539"><td class="memItemLeft" align="right" valign="top"><a id="a530bec1b2c8887898cbd5b96b7f8e539"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a530bec1b2c8887898cbd5b96b7f8e539">generateQuest</a> ()</td></tr>
+<tr class="memdesc:a530bec1b2c8887898cbd5b96b7f8e539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda generuje zadania spośród czterech możliwych. <br /></td></tr>
+<tr class="separator:a530bec1b2c8887898cbd5b96b7f8e539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c8b6ef25360976f80c29eaa7bf3f53"><td class="memItemLeft" align="right" valign="top"><a id="a16c8b6ef25360976f80c29eaa7bf3f53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a16c8b6ef25360976f80c29eaa7bf3f53">finishQuest</a> (const std::string &amp;fight)</td></tr>
+<tr class="memdesc:a16c8b6ef25360976f80c29eaa7bf3f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zakańcza zadanie i zależnie od wyniku walki modyfikuje ilości złota i doświadczenia gracza. <br /></td></tr>
+<tr class="separator:a16c8b6ef25360976f80c29eaa7bf3f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f17598efbccf1445481aee6611c391f"><td class="memItemLeft" align="right" valign="top"><a id="a2f17598efbccf1445481aee6611c391f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a2f17598efbccf1445481aee6611c391f">handleQuest</a> ()</td></tr>
+<tr class="memdesc:a2f17598efbccf1445481aee6611c391f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zarządza zadaniem. <br /></td></tr>
+<tr class="separator:a2f17598efbccf1445481aee6611c391f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb7d1f8771c1b45a6b2f94bb947010d"><td class="memItemLeft" align="right" valign="top"><a id="a1eb7d1f8771c1b45a6b2f94bb947010d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a1eb7d1f8771c1b45a6b2f94bb947010d">updateQuest</a> ()</td></tr>
+<tr class="memdesc:a1eb7d1f8771c1b45a6b2f94bb947010d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda uaktualnia zadanie. <br /></td></tr>
+<tr class="separator:a1eb7d1f8771c1b45a6b2f94bb947010d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae053a792ba477ef876d7e576b33f967b"><td class="memItemLeft" align="right" valign="top"><a id="ae053a792ba477ef876d7e576b33f967b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#ae053a792ba477ef876d7e576b33f967b">handleDungeonFight</a> ()</td></tr>
+<tr class="memdesc:ae053a792ba477ef876d7e576b33f967b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zarządza walką z bossem. <br /></td></tr>
+<tr class="separator:ae053a792ba477ef876d7e576b33f967b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a080fe1dfc66af85d47bfc38daa65b538"><td class="memItemLeft" align="right" valign="top"><a id="a080fe1dfc66af85d47bfc38daa65b538"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a080fe1dfc66af85d47bfc38daa65b538">getQuestName</a> ()</td></tr>
+<tr class="memdesc:a080fe1dfc66af85d47bfc38daa65b538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca nazwę zadania. <br /></td></tr>
+<tr class="separator:a080fe1dfc66af85d47bfc38daa65b538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b30c364e8356cfb95a3cdbce854922"><td class="memItemLeft" align="right" valign="top"><a id="a61b30c364e8356cfb95a3cdbce854922"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a61b30c364e8356cfb95a3cdbce854922">getQuestContent</a> ()</td></tr>
+<tr class="memdesc:a61b30c364e8356cfb95a3cdbce854922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca treść zadania. <br /></td></tr>
+<tr class="separator:a61b30c364e8356cfb95a3cdbce854922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e4d4e976571cd1ba45c1bb7d7d98d7"><td class="memItemLeft" align="right" valign="top"><a id="a69e4d4e976571cd1ba45c1bb7d7d98d7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a69e4d4e976571cd1ba45c1bb7d7d98d7">getGoldAmount</a> () const</td></tr>
+<tr class="memdesc:a69e4d4e976571cd1ba45c1bb7d7d98d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość złota za zadanie. <br /></td></tr>
+<tr class="separator:a69e4d4e976571cd1ba45c1bb7d7d98d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979bbcf05ac5e3062c655f6ebd627f68"><td class="memItemLeft" align="right" valign="top"><a id="a979bbcf05ac5e3062c655f6ebd627f68"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a979bbcf05ac5e3062c655f6ebd627f68">getExpAmount</a> () const</td></tr>
+<tr class="memdesc:a979bbcf05ac5e3062c655f6ebd627f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca ilość doświadczenia za zadanie. <br /></td></tr>
+<tr class="separator:a979bbcf05ac5e3062c655f6ebd627f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578ca8af63380b277b275a6c0cb5f2b8"><td class="memItemLeft" align="right" valign="top"><a id="a578ca8af63380b277b275a6c0cb5f2b8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a578ca8af63380b277b275a6c0cb5f2b8">getDuration</a> () const</td></tr>
+<tr class="memdesc:a578ca8af63380b277b275a6c0cb5f2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca czas zadania. <br /></td></tr>
+<tr class="separator:a578ca8af63380b277b275a6c0cb5f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab840b29db9d1822b0d2dbb213ed787a1"><td class="memItemLeft" align="right" valign="top"><a id="ab840b29db9d1822b0d2dbb213ed787a1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#ab840b29db9d1822b0d2dbb213ed787a1">getStatus</a> () const</td></tr>
+<tr class="memdesc:ab840b29db9d1822b0d2dbb213ed787a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca status zadania. <br /></td></tr>
+<tr class="separator:ab840b29db9d1822b0d2dbb213ed787a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7d850664fda08b69ac90b1b0afcdff"><td class="memItemLeft" align="right" valign="top"><a id="a5c7d850664fda08b69ac90b1b0afcdff"></a>
+BossType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#a5c7d850664fda08b69ac90b1b0afcdff">getBoss</a> () const</td></tr>
+<tr class="memdesc:a5c7d850664fda08b69ac90b1b0afcdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca rodzaj bossa. <br /></td></tr>
+<tr class="separator:a5c7d850664fda08b69ac90b1b0afcdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab140d75de756452e2109679fecf23992"><td class="memItemLeft" align="right" valign="top"><a id="ab140d75de756452e2109679fecf23992"></a>
+EnemyType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#ab140d75de756452e2109679fecf23992">getEnemy</a> () const</td></tr>
+<tr class="memdesc:ab140d75de756452e2109679fecf23992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda zwraca rodzaj przeciwnika. <br /></td></tr>
+<tr class="separator:ab140d75de756452e2109679fecf23992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p><a class="el" href="class_klasa.html" title="gracza i jego statystyki">Klasa</a> reprezentująca zadania i po części zarządzająca nagrodami. </p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/omen/Programy/C++/Shadow_Paths/<a class="el" href="_quest_8h_source.html">Quest.h</a></li>
+<li>/home/omen/Programy/C++/Shadow_Paths/Quest.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
