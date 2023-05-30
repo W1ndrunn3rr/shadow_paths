@@ -4,7 +4,7 @@ Merchant::Merchant(Player &p) : player(p){
     weaponGoldRequired = 25 ;
     armorGoldRequired = 25 ;
     potionGoldRequired = 5;
-    shardsRequired =  1*player.getPotionsLevel();
+    shardsRequired =  player.getPotionsLevel();
 }
 
 void Merchant::upgradeWeapon() {
@@ -35,6 +35,7 @@ void Merchant::upgradePotion() {
     if(player.getShards() >= shardsRequired) {
         player.potionLevelUp();
         player.gainShard(-shardsRequired);
+        shardsRequired =  player.getPotionsLevel();
     }
 }
 

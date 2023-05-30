@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['takedamage_183',['takeDamage',['../class_player.html#a4361bdddf214d12b7683cbaa2021b94b',1,'Player']]]
+  ['upgradearmor_217',['upgradeArmor',['../class_merchant.html#a1e9f4cc1701ca501194d32eb229d3ba9',1,'Merchant']]],
+  ['upgradepotion_218',['upgradePotion',['../class_merchant.html#a7eccde184ea288c701d3fdf930890b21',1,'Merchant']]],
+  ['upgradeweapon_219',['upgradeWeapon',['../class_merchant.html#a3c8c517c1481d84d579303fe8f37c488',1,'Merchant']]],
+  ['usepotion_220',['usePotion',['../class_player.html#a38ff98bcbf32900ff4ae379403a801b0',1,'Player']]]
 ];

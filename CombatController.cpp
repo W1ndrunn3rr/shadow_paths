@@ -15,19 +15,19 @@ void CombatController::mobFight(Enemy &enemy, sf::RenderWindow &window, BossType
         //inicjacja punktu początkowego
         float initialPosX = 250.0f;
         //sleepy dodane w celach zwiększenia czytelności
-        sf::sleep(sf::seconds(0.5f));
+        sf::sleep(sf::seconds(1));
         if (!player.isDead()) {
             view.drawPlayerAttack(window, deltaTime, initialPosX, enemy, type);
             enemy.takeDamage(player.dealDamage());
             view.drawFight(enemy, window, type, 1);
             view.drawPlayerDamagePoints(window,enemy,type);
         }
-        sf::sleep(sf::seconds(0.5f));
+        sf::sleep(sf::seconds(1));
         view.drawMonsterAttack(window, enemy, quest.getBoss());
         player.takeDamage(enemy.dealDamage());
         view.drawFight(enemy, window, type, 1);
         view.drawEnemyDamagePoints(window,enemy,type);
-        sf::sleep(sf::seconds(0.5f));
+        sf::sleep(sf::seconds(1));
         if (player.getCurrentHealth() <= player.getMaxHealth() * 0.3 && player.getPotions() >= 1 &&
             player.getMaxHealth() >= player.getCurrentHealth() + (10 * player.getPotionsLevel()) &&
             !player.isDead()) {
@@ -72,19 +72,19 @@ void CombatController::bossFight(Boss &boss, sf::RenderWindow &window, BossType 
     float deltaTime = 0.0f;
     while (!boss.isDead() && !player.isDead()) {
         tourCounter++;
-        sf::sleep(sf::seconds(0.5f));
+        sf::sleep(sf::seconds(1));
         view.drawPlayerAttack(window, deltaTime, intPosX, boss, type);
         boss.takeDamage(player.dealDamage());
         view.drawFight(boss, window, type, 1);
         view.drawPlayerDamagePoints(window, boss,type);
-        sf::sleep(sf::seconds(0.5f));
+        sf::sleep(sf::seconds(1));
         if ((tourCounter % 3 == 0 && !boss.isDead() && (type == BANSHEE || type == GOBLIN_KING)) ||
             (tourCounter % 5 == 0 && !boss.isDead() && type == ABYSSAL_WATCHERS)) {
             view.drawBossAbility(window, boss, type);
             boss.useAbility();
             view.drawFight(boss, window, type, 1);
             view.drawEnemyDamagePoints(window,boss,type);
-            sf::sleep((sf::seconds((0.25f))));
+            sf::sleep((sf::seconds((0.5f))));
         }
         view.drawMonsterAttack(window, boss, quest.getBoss());
         player.takeDamage(boss.dealDamage());
@@ -93,7 +93,7 @@ void CombatController::bossFight(Boss &boss, sf::RenderWindow &window, BossType 
         if (player.getCurrentHealth() <= player.getMaxHealth() * 0.3 && player.getPotions() >= 1 &&
             player.getMaxHealth() >= player.getCurrentHealth() + (10 * player.getPotionsLevel()) &&
             !player.isDead()) {
-            sf::sleep(sf::seconds(0.5f));
+            sf::sleep(sf::seconds(1));
             player.usePotion();
             view.drawPotionDrink(window, boss, type);
         }
@@ -110,7 +110,7 @@ void CombatController::bossChoice(sf::RenderWindow &window, BossType type) {
         GoblinKing king(7, 100, "Goblin King", 50, 40, player, 20, 20);
         bossFight(king, window, type);
     } else if (type == ABYSSAL_WATCHERS) {
-        AbyssalWatchers watchers(5, 50, "Abyssal Watchers", 100, 75, player, 5, 49);
+        AbyssalWatchers watchers(5, 40, "Abyssal Watchers", 100, 75, player, 5, 49);
         bossFight(watchers, window, type);
     }
 }

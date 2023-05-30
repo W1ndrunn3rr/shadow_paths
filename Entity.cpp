@@ -15,10 +15,10 @@ int generateStat(int floor, int ceil) {
 Player::Player() {
     damage = 0;
     level = 1;
-    baseDamage = 10 ;
-    maxDamage = 15 ;
+    baseDamage = 50;
+    maxDamage =65;
     armor = 2 ;
-    maxHealth = 35;
+    maxHealth = 35000000;
     currentHealth = maxHealth;
     potionsAmount = 1;
     potionLevel = 1;
@@ -194,8 +194,8 @@ int Player::getDamageDone() const {
 
 
 Enemy::Enemy(int arm, int maxHP, std::string name, int max, int min, Player &player, int criticalChance, int dex) {
-    maxDamage = max + 5*(player.getLevel() -1);
-    baseDamage = min + 5*(player.getLevel() -1);
+    maxDamage = max + 10*(player.getLevel() -1);
+    baseDamage = min + 10*(player.getLevel() -1);
     mobName = std::move(name);
     armor = arm + (player.getLevel() -1);
     maxHealth = maxHP + 5*(player.getLevel() - 1);

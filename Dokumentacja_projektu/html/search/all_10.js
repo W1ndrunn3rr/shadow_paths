@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['takedamage_85',['takeDamage',['../class_player.html#a4361bdddf214d12b7683cbaa2021b94b',1,'Player']]]
+  ['weaponlevelup_107',['weaponLevelUp',['../class_player.html#abd30407e24b5cb0d280bc7e1c7862e3b',1,'Player']]]
 ];

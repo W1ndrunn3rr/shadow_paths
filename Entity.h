@@ -4,7 +4,7 @@
 #include <string>
 
 
-//!\class Klasa opisuje postać gracza i jego statystyki
+//! Klasa opisuje postać gracza i jego statystyki
 class Player {
     int potionsAmount;
     int shardsAmount;
@@ -62,16 +62,12 @@ public:
     int getDamageDone() const;
     //!Modyfikacja ilości zdrowia
     void takeDamage(int damagePoints);
-
     //!Metoda zwraca ilość obrażeń
     int dealDamage();
-
     //!Metoda zwiększa poziom gracza
     void levelUp();
-
     //!Metoda zarządza ilością mikstur
     void getPotion();
-
     //!Metoda zarządza poziomem ulepszenia mikstury
     void potionLevelUp();
 

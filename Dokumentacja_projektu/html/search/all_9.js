@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isdead_71',['isDead',['../class_player.html#a20665e4647baa8f898a62021e6204450',1,'Player']]]
+  ['levelup_75',['levelUp',['../class_player.html#a5bda3bad89f797546360636deb154fbb',1,'Player']]]
 ];

@@ -19,7 +19,8 @@ enum battleFought {
 enum BossType {
     BANSHEE,
     GOBLIN_KING,
-    ABYSSAL_WATCHERS
+    ABYSSAL_WATCHERS,
+    CLEARED
 };
 
 //! Typ przeciwnika
@@ -39,9 +40,6 @@ class Quest {
     battleFought state;
     BossType type;
     EnemyType eType;
-public:
-    //!Konstruktor
-    explicit Quest(Player &player);
 
     //!Metoda generuje zadania spośród czterech możliwych
     void generateQuest();
@@ -49,14 +47,13 @@ public:
     //!Metoda zakańcza zadanie i zależnie od wyniku walki modyfikuje ilości złota i doświadczenia gracza
     void finishQuest(const std::string& fight);
 
-    //!Metoda zarządza zadaniem
-    void handleQuest();
-
     //!Metoda uaktualnia zadanie
     void updateQuest();
 
-    //!Metoda zarządza walką z bossem
-    void handleDungeonFight();
+public:
+    //!Konstruktor
+    explicit Quest(Player &player);
+
 
     //! Metoda zwraca nazwę zadania
     std::string getQuestName();
@@ -64,8 +61,16 @@ public:
 //! Metoda zwraca treść zadania
     std::string getQuestContent();
 
+    //!Metoda zarządza zadaniem
+    void handleQuest();
+
+
+    //!Metoda zarządza walką z bossem
+    void handleDungeonFight();
+
 //! Metoda zwraca ilość złota za zadanie
     int getGoldAmount() const;
+
 
 //! Metoda zwraca ilość doświadczenia za zadanie
     int getExpAmount() const;

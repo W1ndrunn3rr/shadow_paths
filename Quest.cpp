@@ -13,7 +13,7 @@ int generateGold(Player &player) {
 int generateTime() {
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> timeRandom(20, 30);
+    std::uniform_int_distribution<std::mt19937::result_type> timeRandom(10, 15);
     int time = static_cast<int>(timeRandom(rng));
     return time;
 }
@@ -21,7 +21,7 @@ int generateTime() {
 int generateExp(Player &player) {
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> expRandom(20 + 10*player.getLevel(), 35 + 10*player.getLevel());
+    std::uniform_int_distribution<std::mt19937::result_type> expRandom(20 + 5*player.getLevel(), 35 + 5*player.getLevel());
     int exp = static_cast<int>(expRandom(rng));
     return exp;
 }
@@ -160,6 +160,8 @@ void Quest::handleDungeonFight() {
             type = GOBLIN_KING;
         else if (type == GOBLIN_KING)
             type = ABYSSAL_WATCHERS;
+        else if(type == ABYSSAL_WATCHERS)
+            type = CLEARED;
         state = WON;
     } else if (player.isDead()) {
         player.gainGold(-10);

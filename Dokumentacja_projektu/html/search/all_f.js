@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['setarmor_81',['setArmor',['../class_player.html#ad6176778ca7783dbab480b62a33ca795',1,'Player']]],
-  ['setgamefont_82',['setGameFont',['../class_game_view.html#a00a236799e7330a37700799c350a9e4f',1,'GameView']]],
-  ['setmenufont_83',['setMenuFont',['../class_game_view.html#a936c3f6eb9a6097b6ebf02abc6f6acff',1,'GameView']]],
-  ['setstats_84',['setStats',['../class_player.html#ac89bce01b6039d6f7fb56a550dda4773',1,'Player']]]
+  ['upgradearmor_103',['upgradeArmor',['../class_merchant.html#a1e9f4cc1701ca501194d32eb229d3ba9',1,'Merchant']]],
+  ['upgradepotion_104',['upgradePotion',['../class_merchant.html#a7eccde184ea288c701d3fdf930890b21',1,'Merchant']]],
+  ['upgradeweapon_105',['upgradeWeapon',['../class_merchant.html#a3c8c517c1481d84d579303fe8f37c488',1,'Merchant']]],
+  ['usepotion_106',['usePotion',['../class_player.html#a38ff98bcbf32900ff4ae379403a801b0',1,'Player']]]
 ];

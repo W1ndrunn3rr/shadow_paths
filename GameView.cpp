@@ -53,111 +53,111 @@ void GameView::setMenuFont(sf::RenderWindow &window) {
 
 }
 
-GameView::GameView(Quest &quest, Player &player, Merchant &merchant) :
-        player(player), merchant(merchant), quest(quest) {
-    if (!menu.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/menuBackground.jpeg"))
+GameView::GameView(Quest &quest, Player &player, Merchant &merchant,Music &music) :
+        player(player), merchant(merchant), quest(quest),music(music) {
+    if (!menu.loadFromFile("/Shadow_Paths/Assets/menuBackground.jpeg"))
         std::cout << "ERROR_1";
-    if (!font.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/font.ttf"))
+    if (!font.loadFromFile("/Shadow_Paths/Assets/font.ttf"))
         std::cout << "ERROR_2";
-    if (!firePlace.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/fireplace.jpeg"))
+    if (!firePlace.loadFromFile("/Shadow_Paths/Assets/fireplace.jpeg"))
         std::cout << "ERROR_3";
-    if (!leftBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/leftBar.jpeg"))
+    if (!leftBar.loadFromFile("/Shadow_Paths/Assets/leftBar.jpeg"))
         std::cout << "ERROR_4";
-    if (!background.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/background.jpg"))
+    if (!background.loadFromFile("/Shadow_Paths/Assets/background.jpg"))
         std::cout << "ERROR_5";
-    if (!blackSmith.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/blacksmith.jpeg"))
+    if (!blackSmith.loadFromFile("/Shadow_Paths/Assets/blacksmith.jpeg"))
         std::cout << "ERROR_6";
-    if (!alcheMist.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/alchemist.jpg"))
+    if (!alchemistTexture.loadFromFile("/Shadow_Paths/Assets/alchemist.jpg"))
         std::cout << "ERROR_7";
-    if (!characterP.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/character.jpg"))
+    if (!characterP.loadFromFile("/Shadow_Paths/Assets/character.jpg"))
         std::cout << "ERROR_8";
-    if (!NPC.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/NPC.png"))
+    if (!NPC.loadFromFile("/Shadow_Paths/Assets/NPC.png"))
         std::cout << "ERROR_9";
-    if (!NPCBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/bar1.png"))
+    if (!NPCBar.loadFromFile("/Shadow_Paths/Assets/bar1.png"))
         std::cout << "ERROR_10";
-    if (!QuestTheme.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/Quest.jpeg"))
+    if (!QuestTheme.loadFromFile("/Shadow_Paths/Assets/Quest.jpeg"))
         std::cout << "ERROR_11";
-    if (!afterFightScreen.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/paper.png"))
+    if (!afterFightScreen.loadFromFile("/Shadow_Paths/Assets/paper.png"))
         std::cout << "ERROR_12";
-    if (!WTTG.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/wttg.jpg"))
+    if (!WTTG.loadFromFile("/Shadow_Paths/Assets/wttg.jpg"))
         std::cout << "ERROR_13";
-    if (!hourGlass.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/hourglass.png"))
+    if (!hourGlass.loadFromFile("/Shadow_Paths/Assets/hourglass.png"))
         std::cout << "ERROR_14";
-    if (!banshee.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/banshee.jpg"))
+    if (!banshee.loadFromFile("/Shadow_Paths/Assets/banshee.jpg"))
         std::cout << "ERROR_15";
-    if (!goblinKing.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/goblinKIng.jpg"))
+    if (!goblinKing.loadFromFile("/Shadow_Paths/Assets/goblinKIng.jpg"))
         std::cout << "ERROR_16";
-    if (!abyssalWatchers.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/abyssalWatchers.jpg"))
+    if (!abyssalWatchers.loadFromFile("/Shadow_Paths/Assets/abyssalWatchers.jpg"))
         std::cout << "ERROR_17";
-    if (!font.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/font.ttf"))
+    if (!font.loadFromFile("/Shadow_Paths/Assets/font.ttf"))
         std::cout << "ERROR_18";
-    if (!bansheeFightScreen.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/bansheeFight.jpg"))
+    if (!bansheeFightScreen.loadFromFile("/Shadow_Paths/Assets/bansheeFight.jpg"))
         std::cout << "ERROR_19";
-    if (!kingFightScreen.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/kingFight.jpg"))
+    if (!kingFightScreen.loadFromFile("/Shadow_Paths/Assets/kingFight.jpg"))
         std::cout << "ERROR_20";
-    if (!watchersFightScreen.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/watchersFight.jpg"))
+    if (!watchersFightScreen.loadFromFile("/Shadow_Paths/Assets/watchersFight.jpg"))
         std::cout << "ERROR_21";
-    if (!playerHealthBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/HPBAR.png"))
+    if (!playerHealthBar.loadFromFile("/Shadow_Paths/Assets/HPBAR.png"))
         std::cout << "ERROR_22";
-    if (!enemyHealthBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/HPBAR.png"))
+    if (!enemyHealthBar.loadFromFile("/Shadow_Paths/Assets/HPBAR.png"))
         std::cout << "ERROR_23";
-    if (!darkRider.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/darkRider.jpg"))
+    if (!darkRider.loadFromFile("/Shadow_Paths/Assets/darkRider.jpg"))
         std::cout << "ERROR_24";
-    if (!caveGoblin.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/caveGoblin.jpg"))
+    if (!caveGoblin.loadFromFile("/Shadow_Paths/Assets/caveGoblin.jpg"))
         std::cout << "ERROR_25";
-    if (!mountainTroll.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/mountainTroll.jpg"))
+    if (!mountainTroll.loadFromFile("/Shadow_Paths/Assets/mountainTroll.jpg"))
         std::cout << "ERROR_26";
-    if (!twilightAssassin.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/twilightAssassin.jpg"))
+    if (!twilightAssassin.loadFromFile("/Shadow_Paths/Assets/twilightAssassin.jpg"))
         std::cout << "ERROR_27";
-    if (!attackTexture.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/attack.png"))
+    if (!attackTexture.loadFromFile("/Shadow_Paths/Assets/attack.png"))
         std::cout << "ERROR_28";
-    if (!blood.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/blood.png"))
+    if (!blood.loadFromFile("/Shadow_Paths/Assets/blood.png"))
         std::cout << "ERROR_30";
-    if (!font.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/font.ttf"))
+    if (!monsterAttackTexture.loadFromFile("/Shadow_Paths/Assets/Assets/claw.png"))
         std::cout << "ERROR_31";
-    if (!monsterAttackTexture.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/claw.png"))
+    if (!potion.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/potion.png"))
         std::cout << "ERROR_32";
-    if (!potion.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/potion.png"))
+    if (!bansheeSkill.loadFromFile("/Shadow_Paths/Assets/bansheeSkill.png"))
         std::cout << "ERROR_33";
-    if (!bansheeSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/bansheeSkill.png"))
+    if (!kingSkill.loadFromFile("/Shadow_Paths/Assets/kingAttack.png"))
         std::cout << "ERROR_34";
-    if (!kingSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/kingAttack.png"))
+    if (!watchersSkill.loadFromFile("/Shadow_Paths/Assets/watchersSkill.png"))
         std::cout << "ERROR_35";
-    if (!watchersSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/watchersSkill.png"))
+    if (!font.loadFromFile("/Shadow_Paths/Assets/font.ttf"))
         std::cout << "ERROR_36";
-    if (!font.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/font.ttf"))
+    if (!bansheeFight.loadFromFile("/Shadow_Paths/Assets/bansheeFight.jpg"))
         std::cout << "ERROR_37";
-    if (!bansheeFight.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/bansheeFight.jpg"))
+    if (!kingFight.loadFromFile("/Shadow_Paths/Assets/kingFight.jpg"))
         std::cout << "ERROR_38";
-    if (!kingFight.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/kingFight.jpg"))
+    if (!watchersFight.loadFromFile("/Shadow_Paths/Assets/watchersFight.jpg"))
         std::cout << "ERROR_39";
-    if (!watchersFight.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/watchersFight.jpg"))
+    if (!playerHealthBar.loadFromFile("/Shadow_Paths/Assets/HPBAR.png"))
         std::cout << "ERROR_40";
-    if (!playerHealthBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/HPBAR.png"))
+    if (!enemyHealthBar.loadFromFile("/Shadow_Paths/Assets/.png"))
         std::cout << "ERROR_41";
-    if (!enemyHealthBar.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/HPBAR.png"))
+    if (!darkRider.loadFromFile("/Shadow_Paths/Assets/darkRider.jpg"))
         std::cout << "ERROR_42";
-    if (!darkRider.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/darkRider.jpg"))
+    if (!caveGoblin.loadFromFile("/Shadow_Paths/Assets/caveGoblin.jpg"))
         std::cout << "ERROR_43";
-    if (!caveGoblin.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/caveGoblin.jpg"))
+    if (!mountainTroll.loadFromFile("/Shadow_Paths/Assets/mountainTroll.jpg"))
         std::cout << "ERROR_44";
-    if (!mountainTroll.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/mountainTroll.jpg"))
+    if (!twilightAssassin.loadFromFile("/Shadow_Paths/Assets/twilightAssassin.jpg"))
         std::cout << "ERROR_45";
-    if (!twilightAssassin.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/twilightAssassin.jpg"))
+    if (!attackTexture.loadFromFile("/Shadow_Paths/Assets/attack.png"))
         std::cout << "ERROR_46";
-    if (!attackTexture.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/attack.png"))
+    if (!blood.loadFromFile("/Shadow_Paths/Assets/blood.png"))
         std::cout << "ERROR_47";
-    if (!blood.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/blood.png"))
+    if (!monsterAttackTexture.loadFromFile("/Shadow_Paths/Assets/claw.png"))
         std::cout << "ERROR_48";
-    if (!monsterAttackTexture.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/claw.png"))
+    if (!potion.loadFromFile("/Shadow_Paths/Assets/potion.png"))
         std::cout << "ERROR_49";
-    if (!potion.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/potion.png"))
+    if (!bansheeSkill.loadFromFile("/Shadow_Paths/Assets/bansheeSkill.png"))
         std::cout << "ERROR_50";
-    if (!bansheeSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/bansheeSkill.png"))
+    if (!kingSkill.loadFromFile("/Shadow_Paths/Assets/kingAttack.png"))
         std::cout << "ERROR_51";
-    if (!kingSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/kingAttack.png"))
+    if (!watchersSkill.loadFromFile("/Shadow_Paths/Assets/watchersSkill.png"))
         std::cout << "ERROR_52";
-    if (!watchersSkill.loadFromFile("/home/omen/Programy/C++/Shadow_Paths/Assets/watchersSkill.png"))
+    if (!dungeonBackground.loadFromFile("/Shadow_Paths/Assets/dungeonBackground.jpg"))
         std::cout << "ERROR_53";
 
 
@@ -276,7 +276,7 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     bsGold.setFillColor(sf::Color::White);
     bsGold.setString("Gold required: " + std::to_string(merchant.getBowGoldRequired()));
     bsGold.setPosition(950, 700);
-    if (player.getGold() >= merchant.getBowGoldRequired()&& player.getWeaponLevel() < 5)
+    if (player.getGold() >= merchant.getBowGoldRequired() && player.getWeaponLevel() < 5)
         bsGold.setFillColor(sf::Color::Green);
     else
         bsGold.setFillColor(sf::Color::Red);
@@ -291,7 +291,7 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     baGold.setFont(font);
     baGold.setCharacterSize(30);
     baGold.setFillColor(sf::Color::White);
-    baGold.setString("Gold required: " + std::to_string(merchant.getArmorGoldRequired()) );
+    baGold.setString("Gold required: " + std::to_string(merchant.getArmorGoldRequired()));
     baGold.setPosition(440, 700);
     if (player.getGold() >= merchant.getArmorGoldRequired() && player.getArmorLevel() < 5)
         baGold.setFillColor(sf::Color::Green);
@@ -307,7 +307,7 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
 }
 
 void GameView::drawAlchemist(sf::RenderWindow &window) {
-    sf::Sprite alchemistSprite(alcheMist);
+    sf::Sprite alchemistSprite(alchemistTexture);
     alchemistSprite.setPosition(384, 0);
     window.draw(alchemistSprite);
 
@@ -321,9 +321,9 @@ void GameView::drawAlchemist(sf::RenderWindow &window) {
     apGold.setFont(font);
     apGold.setCharacterSize(30);
     apGold.setFillColor(sf::Color::White);
-    apGold.setString("Shards required: " + std::to_string(1 * player.getPotionsLevel()));
+    apGold.setString("Shards required: " + std::to_string(player.getPotionsLevel()));
     apGold.setPosition(950, 700);
-    if (player.getShards() >=  player.getPotionsLevel())
+    if (player.getShards() >= player.getPotionsLevel())
         apGold.setFillColor(sf::Color::Green);
     else
         apGold.setFillColor(sf::Color::Red);
@@ -340,7 +340,7 @@ void GameView::drawAlchemist(sf::RenderWindow &window) {
     auGold.setFillColor(sf::Color::White);
     auGold.setString("Gold required: 5");
     auGold.setPosition(440, 700);
-    if (player.getGold() >= 5 && player.getPotionsLevel() > player.getPotions() )
+    if (player.getGold() >= 5 && player.getPotionsLevel() > player.getPotions())
         auGold.setFillColor(sf::Color::Green);
     else
         auGold.setFillColor(sf::Color::Red);
@@ -458,24 +458,22 @@ void GameView::drawAfterFightCom(sf::RenderWindow &window) {
                 "to overcome our adversaries. \n"
                 "\n                    - 10 gold");
         afterFightCom.setPosition(490, 204);
-    }
-
-    if(quest.getStatus() == WON && quest.getEnemy() == BOSS){
+    } else if (quest.getStatus() == WON && quest.getEnemy() == BOSS) {
         afterFightCom.setString("Your heroic deeds have yielded the desired \n"
                                 " outcome! We have emerged victorious in \n"
                                 "our quest,and our success will be \n"
                                 "recorded in the chronicles. We are proud\n"
                                 " of your courage and determination!\n"
-                                "\n You gain: \n\n 100 gold \n\n 100 experience points \n\n "+   std::to_string(1*quest.getBoss())+ "  " + "shards");
+                                "\n You gain: \n\n 100 gold \n\n 100 experience points \n\n " +
+                                std::to_string(1 * quest.getBoss()) + "  " + "shards");
         afterFightCom.setPosition(412, 204);
-    }
-    if(quest.getEnemy() == MOB  && quest.getStatus() == WON){
+    } else if (quest.getEnemy() == MOB && quest.getStatus() == WON) {
         afterFightCom.setString("Your heroic deeds have yielded the desired \n"
                                 " outcome! We have emerged victorious in \n"
                                 "our quest,and our success will be \n"
                                 "recorded in the chronicles. We are proud\n"
-                                " of your courage and determination!\n"
-                                "\n You gain: \n\n" + std::to_string(quest.getGoldAmount()) + " gold" +"\n\n"  + std::to_string(quest.getExpAmount())  + " experience points");
+                                " of-You gain: \n\n" + std::to_string(quest.getGoldAmount()) + " gold" + "\n\n" +
+                                std::to_string(quest.getExpAmount()) + " experience points");
         afterFightCom.setPosition(412, 204);
     }
 
@@ -485,22 +483,25 @@ void GameView::drawAfterFightCom(sf::RenderWindow &window) {
 }
 
 void GameView::drawDungeon(sf::RenderWindow &window) {
-    sf::Sprite bansheeSprite(banshee), kingSprite(goblinKing), watchersSprite(abyssalWatchers);
+    sf::Sprite bansheeSprite(banshee), kingSprite(goblinKing), watchersSprite(abyssalWatchers), backgroundSprite(
+            dungeonBackground);
     bansheeSprite.setPosition(384, 0);
     kingSprite.setPosition(384, 0);
     watchersSprite.setPosition(384, 0);
+    backgroundSprite.setPosition(384, 0);
     if (quest.getBoss() == BANSHEE) {
         window.draw(bansheeSprite);
     } else if (quest.getBoss() == GOBLIN_KING) {
         window.draw(kingSprite);
     } else if (quest.getBoss() == ABYSSAL_WATCHERS) {
         window.draw(watchersSprite);
-    }
+    } else if (quest.getBoss() == CLEARED)
+        window.draw(backgroundSprite);
 }
 
 //Funkcja wyświetla tło walki (portrety, statystyki, oraz pasek zdrowia)
-void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type,int mode) {
-    if(mode == 1)
+void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type, int mode) {
+    if (mode == 1)
         window.clear();
 
 
@@ -516,7 +517,8 @@ void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type,i
     playerStats.setString(
             "          " + std::to_string(player.getCurrentHealth()) + "/" + std::to_string(player.getMaxHealth()) +
             "\n\n" + "DAMAGE : " + std::to_string((player.getMinDamage() + player.getMaxDamage()) / 2) +
-            "\n\n" + "ARMOR: " + std::to_string(player.getArmor()) + "\n\n" + "DEXTERITY: " + std::to_string(player.getDexterity()) + "\n\n" +
+            "\n\n" + "ARMOR: " + std::to_string(player.getArmor()) + "\n\n" + "DEXTERITY: " +
+            std::to_string(player.getDexterity()) + "\n\n" +
             "LUCK: " + std::to_string(player.getLuck()));
     playerStats.setPosition(230, 462);
 
@@ -527,7 +529,8 @@ void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type,i
     enemyStats.setString(
             "          " + std::to_string(enemy.getCurrentHealth()) + "/" + std::to_string(enemy.getMaxHealth()) +
             "\n\n" + "DAMAGE : " + std::to_string((enemy.getMinDamage() + enemy.getMaxDamage()) / 2) +
-            "\n\n" + "ARMOR: " + std::to_string(enemy.getArmor()) + "\n\n" "DEXTERITY: " + std::to_string(enemy.getDexterity()) +  "\n\n"
+            "\n\n" + "ARMOR: " + std::to_string(enemy.getArmor()) + "\n\n" "DEXTERITY: " +
+            std::to_string(enemy.getDexterity()) + "\n\n"
             + "LUCK: " + std::to_string(enemy.getLuck()));
     enemyStats.setPosition(825, 462);
 
@@ -587,8 +590,12 @@ void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type,i
     else
         playerChoice = 5;
 
-    enemyHPBar.setTextureRect(sf::IntRect(0, static_cast<int>(2 + enemyBarSize.y * enemyChoice),  static_cast<int>(enemyBarSize.x),  static_cast<int>(enemyBarSize.y)));
-    playerHPBar.setTextureRect(sf::IntRect(0, static_cast<int>(2 + playerBarSize.y * playerChoice),  static_cast<int>(enemyBarSize.x),  static_cast<int>(enemyBarSize.y)));
+    enemyHPBar.setTextureRect(
+            sf::IntRect(0, static_cast<int>(2 + enemyBarSize.y * enemyChoice), static_cast<int>(enemyBarSize.x),
+                        static_cast<int>(enemyBarSize.y)));
+    playerHPBar.setTextureRect(
+            sf::IntRect(0, static_cast<int>(2 + playerBarSize.y * playerChoice), static_cast<int>(enemyBarSize.x),
+                        static_cast<int>(enemyBarSize.y)));
 
 
     //Wybór przeciwnika
@@ -618,7 +625,7 @@ void GameView::drawFight(Enemy &enemy, sf::RenderWindow &window, BossType type,i
     window.draw(playerHPBar);
     window.draw(playerStats);
     window.draw(enemyStats);
-    if(mode == 1)
+    if (mode == 1)
         window.display();
 
 }
@@ -640,11 +647,12 @@ void GameView::drawPlayerAttack(sf::RenderWindow &window, float deltaTime, float
     float targetX = 640.0f;
     bool reachedTarget = false;
     sf::Clock clock;
+    music.playArrow();
     while (!reachedTarget) {
         float movement = speed * deltaTime;
         attackSprite.move(movement, 0);
         window.clear();
-        drawFight(enemy, window, type,2);
+        drawFight(enemy, window, type, 2);
         //Wyświetlanie animacji ataku metodą clear & display
         if (!player.isDead()) {
             window.draw(attackSprite);
@@ -652,8 +660,9 @@ void GameView::drawPlayerAttack(sf::RenderWindow &window, float deltaTime, float
                 reachedTarget = true;
                 for (int i = 0; i <= 255; i += 15) {
                     window.clear();
-                    drawFight(enemy, window, type,2);
+                    drawFight(enemy, window, type, 2);
                     if (i != 255) {
+                        music.playBlood();
                         window.draw(attackSprite);
                         window.draw(bloodSprite);
                     }
@@ -672,10 +681,10 @@ void GameView::drawPlayerAttack(sf::RenderWindow &window, float deltaTime, float
     }
 }
 
-void GameView::drawEnemyDamagePoints(sf::RenderWindow &window, Enemy &enemy,BossType type){
+void GameView::drawEnemyDamagePoints(sf::RenderWindow &window, Enemy &enemy, BossType type) {
 
     //Obrażenia przeciwnika
-    if(!enemy.isDead()) {
+    if (!enemy.isDead()) {
         window.clear();
         enemyDamage.setFont(font);
         enemyDamage.setCharacterSize(40);
@@ -688,8 +697,8 @@ void GameView::drawEnemyDamagePoints(sf::RenderWindow &window, Enemy &enemy,Boss
     }
 }
 
-void GameView::drawPlayerDamagePoints(sf::RenderWindow &window, Enemy &enemy,BossType type) {
-    if(!player.isDead()) {
+void GameView::drawPlayerDamagePoints(sf::RenderWindow &window, Enemy &enemy, BossType type) {
+    if (!player.isDead()) {
         window.clear();
         //Obrażenia gracza
         playerDamage.setFont(font);
@@ -712,7 +721,8 @@ void GameView::drawMonsterAttack(sf::RenderWindow &window, Enemy &enemy, BossTyp
     if (!enemy.isDead() && !player.isDead()) {
         for (int i = 0; i <= 250; i += 10) {
             window.clear();
-            drawFight(enemy, window, type,2);
+            drawFight(enemy, window, type, 2);
+            music.playMonsterAttack();
             if (i != 250) {
                 window.draw(monsterAttack);
             }
@@ -723,7 +733,6 @@ void GameView::drawMonsterAttack(sf::RenderWindow &window, Enemy &enemy, BossTyp
     }
 }
 
-//Funkcja wyświetla animacje picia mikstury
 void GameView::drawPotionDrink(sf::RenderWindow &window, Enemy &enemy, BossType type) {
     sf::Sprite hpPotion(potion);
     hpPotion.setPosition(380, 120);
@@ -736,7 +745,7 @@ void GameView::drawPotionDrink(sf::RenderWindow &window, Enemy &enemy, BossType 
     if (!player.isDead()) {
         for (int i = 0; i <= 255; i += 15) {
             window.clear();
-            drawFight(enemy, window, type,2);
+            drawFight(enemy, window, type, 2);
             if (i != 255) {
                 window.draw(hpPotion);
                 window.draw(potionHealth);
@@ -771,11 +780,11 @@ void GameView::drawBossAbility(sf::RenderWindow &window, Boss &boss, BossType ty
     bossDamage.setPosition(320, 190);
 
     if (type == BANSHEE)
-        bossDamage.setString(std::to_string(player.getGold()/2*player.getArmor()));
+        bossDamage.setString(std::to_string(player.getGold() / 2 * player.getArmor()));
     if (type == GOBLIN_KING)
-        bossDamage.setString(std::to_string(player.getGold()/2*player.getArmor()));
+        bossDamage.setString(std::to_string(player.getGold() / 2 * player.getArmor()));
     if (type == ABYSSAL_WATCHERS)
-        bossDamage.setString(std::to_string(player.getCurrentHealth()*1000));
+        bossDamage.setString(std::to_string(player.getCurrentHealth() * 1000));
 
 
     //Obsługa animacji
@@ -784,12 +793,18 @@ void GameView::drawBossAbility(sf::RenderWindow &window, Boss &boss, BossType ty
             window.clear();
             drawFight(boss, window, type, 2);
             if (i != 255) {
-                if (type == BANSHEE)
+                if (type == BANSHEE) {
+                    music.playBanshee();
                     window.draw(bansheeSkillSprite);
-                else if (type == GOBLIN_KING)
+                }
+                else if (type == GOBLIN_KING) {
+                    music.playGoblinKing();
                     window.draw(kingSkillSprite);
-                else if (type == ABYSSAL_WATCHERS)
+                }
+                else if (type == ABYSSAL_WATCHERS) {
+                    music.playAbyssalWatchers();
                     window.draw(watchersSkillSprite);
+                }
                 window.draw(bossDamage);
                 bansheeSkillSprite.setColor(sf::Color(255, 255, 255, 255 - i));
                 kingSkillSprite.setColor(sf::Color(255, 255, 255, 255 - i));

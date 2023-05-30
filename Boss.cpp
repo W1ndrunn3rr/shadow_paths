@@ -37,7 +37,7 @@ Banshee::Banshee(int arm, int maxHP, const std::string& name, int max, int min, 
 }
 
 void Banshee::useAbility() {
-    player.takeDamage(player.getGold() / 2 * player.getArmor());
+    player.takeDamage(player.getArmor()*player.getArmor());
 }
 
 GoblinKing::GoblinKing(int arm, int maxHP, const std::string& name, int max, int min, Player &player, int criticalChance, int dex)
@@ -48,7 +48,7 @@ GoblinKing::GoblinKing(int arm, int maxHP, const std::string& name, int max, int
 }
 
 void GoblinKing::useAbility() {
-    player.takeDamage(player.getGold() / 2 * player.getArmor());
+    player.takeDamage(player.getGold()  * player.getArmor());
 }
 
 AbyssalWatchers::AbyssalWatchers(int arm, int maxHP, const std::string& name, int max, int min, Player &player, int criticalChance,

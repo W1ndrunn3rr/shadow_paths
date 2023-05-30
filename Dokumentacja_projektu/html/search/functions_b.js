@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['player_175',['Player',['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player']]],
-  ['potionlevelup_176',['potionLevelUp',['../class_player.html#a277fab9cb21ead44675de79e36c76cc3',1,'Player']]]
+  ['quest_211',['Quest',['../class_quest.html#a84313e8eb29d9bb60f0c0b7aa24d7272',1,'Quest']]],
+  ['questenemychoose_212',['questEnemyChoose',['../class_combat_controller.html#a942b4e41bd805a0e5a8e69367bf820b3',1,'CombatController']]]
 ];

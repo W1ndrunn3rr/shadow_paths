@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['player_77',['Player',['../class_player.html',1,'Player'],['../class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8',1,'Player::Player()']]],
-  ['potionlevelup_78',['potionLevelUp',['../class_player.html#a277fab9cb21ead44675de79e36c76cc3',1,'Player']]]
+  ['setarmor_99',['setArmor',['../class_player.html#ad6176778ca7783dbab480b62a33ca795',1,'Player']]],
+  ['setgamefont_100',['setGameFont',['../class_game_view.html#a00a236799e7330a37700799c350a9e4f',1,'GameView']]],
+  ['setstats_101',['setStats',['../class_player.html#ac89bce01b6039d6f7fb56a550dda4773',1,'Player']]]
 ];

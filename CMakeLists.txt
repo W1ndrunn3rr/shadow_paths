@@ -18,5 +18,5 @@ ENDIF()
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 # tu ustawiacie nazwę pliku wykonywalnego - możecie zmienić choinka na coś innego
-add_executable(Shadow_Paths main.cpp Entity.cpp Entity.h Quest.cpp Quest.h Merchant.h Merchant.cpp CombatController.cpp CombatController.h GameController.cpp GameController.h GameView.cpp GameView.h Boss.cpp Boss.h)
-target_link_libraries(Shadow_Paths sfml-graphics)
+add_executable(Shadow_Paths main.cpp Entity.cpp Entity.h Quest.cpp Quest.h Merchant.h Merchant.cpp CombatController.cpp CombatController.h GameController.cpp GameController.h GameView.cpp GameView.h Boss.cpp Boss.h Music.cpp Music.h)
+target_link_libraries(Shadow_Paths sfml-graphics sfml-audio)

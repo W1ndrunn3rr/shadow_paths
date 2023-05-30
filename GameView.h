@@ -6,28 +6,33 @@
 #include "Merchant.h"
 #include "Quest.h"
 #include "Boss.h"
+#include "Music.h"
 
-//! Klasa za pomocą której, wyśiwetlany jest ogólny widok gry
+//! Klasa za pomocą której, wyświetlany jest ogólny widok gry
 class GameView {
     sf::Font font;
     sf::Vector2i mousePosition;
+    //Pomocnicza zmienna do odmierzania czasu
     sf::Time remainingTime;
-    sf::Texture menu, firePlace, leftBar, background, blackSmith, alcheMist, characterP, NPC, NPCBar, QuestTheme, afterFightScreen,WTTG,hourGlass,
+    //Tekstury
+    sf::Texture menu, firePlace, leftBar, background, blackSmith, alchemistTexture, characterP, NPC, NPCBar, QuestTheme, afterFightScreen,WTTG,hourGlass,
     banshee,goblinKing,abyssalWatchers,bansheeFightScreen,kingFightScreen,watchersFightScreen,darkRider, caveGoblin, mountainTroll, twilightAssassin, playerHealthBar, enemyHealthBar, bansheeFight
-    , kingFight, watchersFight,attackTexture, blood,monsterAttackTexture,potion,bansheeSkill, kingSkill, watchersSkill;
+    , kingFight, watchersFight,attackTexture, blood,monsterAttackTexture,potion,bansheeSkill, kingSkill, watchersSkill,dungeonBackground;
+    //Teksty wyświetlane na ekranie
     sf::Text title, playButton, optionButton, exitButton, fire, blacksmith, alchemist,
             coins, level, character, dungeon, stats1, stats2, bSword, bsGold, bArmor, baGold, aPotion, apGold, aUpgrade, auGold,
             questOne, duringQuest, afterFightCom,playerStats, enemyStats,playerDamage,enemyDamage,potionHealth, bossDamage;
     Player &player;
     Merchant &merchant;
     Quest &quest;
-public:
-    //!Konstruktor
-    GameView(Quest &quest, Player &player, Merchant &merchant);
+    Music &music;
 
     //!Metoda ustawia czcionki i teksty menu
     void setMenuFont(sf::RenderWindow &window);
 
+public:
+    //!Konstruktor klasy GameView
+    GameView(Quest &quest, Player &player, Merchant &merchant,Music &music);
     //!Metoda odpowiada za wyświetlanie menu gry
     void drawMenu(sf::RenderWindow &window);
 
