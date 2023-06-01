@@ -13,9 +13,10 @@ class CombatController {
     Quest &quest;
     GameView &view;
     int tourCounter;
+    int difficultMultiplier;
+
     //!Metoda obsługuje system walki i odpowiada za wyświetlanie jej przebiegu
     void mobFight(Enemy &enemy, sf::RenderWindow &window, BossType type);
-
 
     //!Metoda obsługuje system walki z bossem
     void bossFight(Boss &boss, sf::RenderWindow &window,BossType type);

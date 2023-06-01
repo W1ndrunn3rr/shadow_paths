@@ -5,6 +5,7 @@
 
 CombatController::CombatController(Player &p, GameView &view, Quest &quest) : player(p), quest(quest), view(view) {
     tourCounter = 0;
+    difficultMultiplier = 1;
 }
 
 //Metodę razem z widokiem tworzyłem z użyciem chatu GPT (animacja lecącej strzały)
@@ -41,27 +42,31 @@ void CombatController::mobFight(Enemy &enemy, sf::RenderWindow &window, BossType
 
 
 void CombatController::questEnemyChoose(sf::RenderWindow &window, BossType type) {
+    if(player.getLevel() > 5 && quest.getBoss() == BANSHEE)
+        difficultMultiplier = 2;
+    if(player.getLevel() > 9 && quest.getBoss() == GOBLIN_KING)
+        difficultMultiplier = 2;
     std::random_device dev;
     std::mt19937 rng(dev());
     std::uniform_int_distribution<std::mt19937::result_type> enemyNumber(1, 4);
     int caseNumber = int(enemyNumber(rng));
     if (caseNumber == 1) {
-        Enemy darkRider(2, 25, "Dark Rider", 15, 9, player, 1, 2);
+        Enemy darkRider(2, 25, "Dark Rider", 15*difficultMultiplier, 9*difficultMultiplier, player, 1, 2);
         mobFight(darkRider, window, type);
         return;
     }
     if (caseNumber == 2) {
-        Enemy caveGoblin(1, 20, "Cave Goblin", 25, 20, player, 5, 5);
+        Enemy caveGoblin(1, 20, "Cave Goblin", 25*difficultMultiplier, 20*difficultMultiplier, player, 5, 5);
         mobFight(caveGoblin, window, type);
         return;
     }
     if (caseNumber == 3) {
-        Enemy mountainTroll(2, 40, "Mountain Troll", 9, 7, player, 0, 0); // do modyfikacji (armor typu float)
+        Enemy mountainTroll(2, 40, "Mountain Troll", 9*difficultMultiplier, 7*difficultMultiplier, player, 0, 0); // do modyfikacji (armor typu float)
         mobFight(mountainTroll, window, type);
         return;
     }
     if (caseNumber == 4) {
-        Enemy twilightAssassin(2, 25, "Twilight Assassin", 20, 15, player, 4, 4);
+        Enemy twilightAssassin(2, 25, "Twilight Assassin", 20*difficultMultiplier, 15*difficultMultiplier, player, 4, 4);
         mobFight(twilightAssassin, window, type);
     }
 }

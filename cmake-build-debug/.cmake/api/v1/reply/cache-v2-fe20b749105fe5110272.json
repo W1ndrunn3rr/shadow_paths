@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/omen/Programy/C++/Shadow_Paths/cmake-build-debug"
+			"value" : "/home/omen/Gitlab/po23_pn09_275409/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omen/Programy/C++/Shadow_Paths/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/omen/Gitlab/po23_pn09_275409/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/omen/Programy/C++/Shadow_Paths"
+			"value" : "/home/omen/Gitlab/po23_pn09_275409"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1159,7 +1159,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omen/Programy/C++/Shadow_Paths/cmake-build-debug"
+			"value" : "/home/omen/Gitlab/po23_pn09_275409/cmake-build-debug"
 		},
 		{
 			"name" : "Shadow_Paths_IS_TOP_LEVEL",
@@ -1183,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/omen/Programy/C++/Shadow_Paths"
+			"value" : "/home/omen/Gitlab/po23_pn09_275409"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

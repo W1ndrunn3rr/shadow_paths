@@ -49,6 +49,8 @@ GoblinKing::GoblinKing(int arm, int maxHP, const std::string& name, int max, int
 
 void GoblinKing::useAbility() {
     player.takeDamage(player.getGold()  * player.getArmor());
+    if(player.getGold()/2 > 0)
+    player.gainGold(player.getGold()/2);
 }
 
 AbyssalWatchers::AbyssalWatchers(int arm, int maxHP, const std::string& name, int max, int min, Player &player, int criticalChance,

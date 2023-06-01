@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/omen/Gitlab/Shadow_Paths/cmake-build-debug",
-		"source" : "/home/omen/Gitlab/Shadow_Paths"
+		"build" : "/home/omen/Gitlab/po23_pn09_275409/cmake-build-debug",
+		"source" : "/home/omen/Gitlab/po23_pn09_275409"
 	},
 	"version" : 
 	{
