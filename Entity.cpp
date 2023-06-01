@@ -15,10 +15,10 @@ int generateStat(int floor, int ceil) {
 Player::Player() {
     damage = 0;
     level = 1;
-    baseDamage = 50;
-    maxDamage =65;
+    baseDamage = 10;
+    maxDamage =15;
     armor = 2 ;
-    maxHealth = 35000000;
+    maxHealth = 35;
     currentHealth = maxHealth;
     potionsAmount = 1;
     potionLevel = 1;
