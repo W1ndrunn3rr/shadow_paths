@@ -42,13 +42,16 @@ void CombatController::mobFight(Enemy &enemy, sf::RenderWindow &window, BossType
 
 
 void CombatController::questEnemyChoose(sf::RenderWindow &window, BossType type) {
-    if(player.getLevel() > 5 && quest.getBoss() == BANSHEE)
+    if(player.getLevel() > 5 && quest.getBoss() == BANSHEE){
         difficultMultiplier = 2;
-    if(player.getLevel() > 9 && quest.getBoss() == GOBLIN_KING)
+    }else if(player.getLevel() > 9 && quest.getBoss() == GOBLIN_KING){
         difficultMultiplier = 2;
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> enemyNumber(1, 4);
+    }else 
+    difficultMultiplier = 1
+
+std::uniform_int_distribution<std::mt19937::result_type> enemyNumber(1, 4);
     int caseNumber = int(enemyNumber(rng));
     if (caseNumber == 1) {
         Enemy darkRider(2, 25, "Dark Rider", 15*difficultMultiplier, 9*difficultMultiplier, player, 1, 2);
