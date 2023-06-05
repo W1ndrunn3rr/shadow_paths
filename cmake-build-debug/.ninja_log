@@ -23,3 +23,7 @@
 1	347	1685627870143551707	CMakeFiles/Shadow_Paths.dir/GameController.cpp.o	b13fd62dad06e28c
 0	436	1685627870231551958	CMakeFiles/Shadow_Paths.dir/CombatController.cpp.o	862c97f7240c7ce4
 436	512	1685627870307552172	Shadow_Paths	8aa836c448522d72
+2	213	1685951661843283156	CMakeFiles/Shadow_Paths.dir/Boss.cpp.o	ba1693e90f7d4a9a
+1	412	1685951662043284202	CMakeFiles/Shadow_Paths.dir/Entity.cpp.o	cba8c0f76d8d8474
+0	454	1685951673215342692	CMakeFiles/Shadow_Paths.dir/CombatController.cpp.o	862c97f7240c7ce4
+455	567	1685951673327343278	Shadow_Paths	8aa836c448522d72

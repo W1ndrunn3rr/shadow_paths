@@ -44,9 +44,9 @@ void CombatController::mobFight(Enemy &enemy, sf::RenderWindow &window, BossType
 void CombatController::questEnemyChoose(sf::RenderWindow &window, BossType type) {
     if(player.getLevel() > 5 && quest.getBoss() == BANSHEE){
         difficultMultiplier = 2;
-    }else if(player.getLevel() > 9 && quest.getBoss() == GOBLIN_KING){
+    }else if(player.getLevel() > 9 && quest.getBoss() == GOBLIN_KING) {
         difficultMultiplier = 2;
-else{
+    }else{
     difficultMultiplier = 1;
 }
     std::random_device dev;
