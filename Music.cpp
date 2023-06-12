@@ -41,15 +41,15 @@ Music::Music() {
         std::cout << "ERROR";
     afterFightCom.setVolume(25);
 
-    if (!arrow.openFromFile("../WAVS/Assets/arrow.wav"))
+    if (!arrow.openFromFile("../WAVS/arrow.wav"))
         std::cout << "ERROR";
     arrow.setVolume(50);
 
-    if (!blood.openFromFile("../WAVS/Assets/blood.wav"))
+    if (!blood.openFromFile("../WAVS/blood.wav"))
         std::cout << "ERROR";
     blood.setVolume(15);
 
-    if (!monsterAttack.openFromFile("../WAVS/Assets/monsterAttack.wav"))
+    if (!monsterAttack.openFromFile("../WAVS/monsterAttack.wav"))
         std::cout << "ERROR";
 
     if (!banshee.openFromFile("../WAVS/banshee.wav"))

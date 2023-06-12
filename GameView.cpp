@@ -53,8 +53,8 @@ void GameView::setMenuFont(sf::RenderWindow &window) {
 
 }
 
-GameView::GameView(Quest &quest, Player &player, Merchant &merchant,Music &music) :
-        player(player), merchant(merchant), quest(quest),music(music) {
+GameView::GameView(Quest &quest, Player &player, Merchant &merchant, Music &music) :
+        player(player), merchant(merchant), quest(quest), music(music) {
     if (!menu.loadFromFile("../Assets/menuBackground.jpeg"))
         std::cout << "ERROR_1";
     if (!font.loadFromFile("../Assets/font.ttf"))
@@ -113,7 +113,7 @@ GameView::GameView(Quest &quest, Player &player, Merchant &merchant,Music &music
         std::cout << "ERROR_28";
     if (!blood.loadFromFile("../Assets/blood.png"))
         std::cout << "ERROR_30";
-    if (!monsterAttackTexture.loadFromFile("../Assets/Assets/claw.png"))
+    if (!monsterAttackTexture.loadFromFile("../Assets/claw.png"))
         std::cout << "ERROR_31";
     if (!potion.loadFromFile("../Assets/potion.png"))
         std::cout << "ERROR_32";
@@ -133,7 +133,7 @@ GameView::GameView(Quest &quest, Player &player, Merchant &merchant,Music &music
         std::cout << "ERROR_39";
     if (!playerHealthBar.loadFromFile("../Assets/HPBAR.png"))
         std::cout << "ERROR_40";
-    if (!enemyHealthBar.loadFromFile("../Assets/.png"))
+    if (!enemyHealthBar.loadFromFile("../Assets/HPBAR.png"))
         std::cout << "ERROR_41";
     if (!darkRider.loadFromFile("../Assets/darkRider.jpg"))
         std::cout << "ERROR_42";
@@ -147,17 +147,17 @@ GameView::GameView(Quest &quest, Player &player, Merchant &merchant,Music &music
         std::cout << "ERROR_46";
     if (!blood.loadFromFile("../Assets/blood.png"))
         std::cout << "ERROR_47";
-    if (!monsterAttackTexture.loadFromFile("/Shadow_Paths/Assets/claw.png"))
+    if (!monsterAttackTexture.loadFromFile("../Assets/claw.png"))
         std::cout << "ERROR_48";
-    if (!potion.loadFromFile("/Shadow_Paths/Assets/potion.png"))
+    if (!potion.loadFromFile("../Assets/potion.png"))
         std::cout << "ERROR_49";
-    if (!bansheeSkill.loadFromFile("/Shadow_Paths/Assets/bansheeSkill.png"))
+    if (!bansheeSkill.loadFromFile("../Assets/bansheeSkill.png"))
         std::cout << "ERROR_50";
-    if (!kingSkill.loadFromFile("/Shadow_Paths/Assets/kingAttack.png"))
+    if (!kingSkill.loadFromFile("../Assets/kingAttack.png"))
         std::cout << "ERROR_51";
-    if (!watchersSkill.loadFromFile("/Shadow_Paths/Assets/watchersSkill.png"))
+    if (!watchersSkill.loadFromFile("../Assets/watchersSkill.png"))
         std::cout << "ERROR_52";
-    if (!dungeonBackground.loadFromFile("/Shadow_Paths/Assets/dungeonBackground.jpg"))
+    if (!dungeonBackground.loadFromFile("../Assets/dungeonBackground.jpg"))
         std::cout << "ERROR_53";
 
 
@@ -274,7 +274,9 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     bsGold.setFont(font);
     bsGold.setCharacterSize(30);
     bsGold.setFillColor(sf::Color::White);
-    bsGold.setString("Gold required: " + std::to_string(merchant.getBowGoldRequired()));
+    if (player.getWeaponLevel() == 5)
+        bsGold.setString("Gold required: " + std::to_string(merchant.getBowGoldRequired()));
+
     bsGold.setPosition(950, 700);
     if (player.getGold() >= merchant.getBowGoldRequired() && player.getWeaponLevel() < 5)
         bsGold.setFillColor(sf::Color::Green);
@@ -291,7 +293,8 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     baGold.setFont(font);
     baGold.setCharacterSize(30);
     baGold.setFillColor(sf::Color::White);
-    baGold.setString("Gold required: " + std::to_string(merchant.getArmorGoldRequired()));
+    if (player.getArmorLevel() == 5 )
+        baGold.setString("Gold required: " + std::to_string(merchant.getArmorGoldRequired()));
     baGold.setPosition(440, 700);
     if (player.getGold() >= merchant.getArmorGoldRequired() && player.getArmorLevel() < 5)
         baGold.setFillColor(sf::Color::Green);
@@ -796,12 +799,10 @@ void GameView::drawBossAbility(sf::RenderWindow &window, Boss &boss, BossType ty
                 if (type == BANSHEE) {
                     music.playBanshee();
                     window.draw(bansheeSkillSprite);
-                }
-                else if (type == GOBLIN_KING) {
+                } else if (type == GOBLIN_KING) {
                     music.playGoblinKing();
                     window.draw(kingSkillSprite);
-                }
-                else if (type == ABYSSAL_WATCHERS) {
+                } else if (type == ABYSSAL_WATCHERS) {
                     music.playAbyssalWatchers();
                     window.draw(watchersSkillSprite);
                 }
