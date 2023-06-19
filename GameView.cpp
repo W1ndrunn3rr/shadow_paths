@@ -274,7 +274,7 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     bsGold.setFont(font);
     bsGold.setCharacterSize(30);
     bsGold.setFillColor(sf::Color::White);
-    if (player.getWeaponLevel() == 5)
+    if (player.getWeaponLevel() < 5)
         bsGold.setString("Gold required: " + std::to_string(merchant.getBowGoldRequired()));
 
     bsGold.setPosition(950, 700);
@@ -293,7 +293,7 @@ void GameView::drawBlackSmith(sf::RenderWindow &window) {
     baGold.setFont(font);
     baGold.setCharacterSize(30);
     baGold.setFillColor(sf::Color::White);
-    if (player.getArmorLevel() == 5 )
+    if (player.getArmorLevel() < 5 )
         baGold.setString("Gold required: " + std::to_string(merchant.getArmorGoldRequired()));
     baGold.setPosition(440, 700);
     if (player.getGold() >= merchant.getArmorGoldRequired() && player.getArmorLevel() < 5)
