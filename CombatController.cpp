@@ -11,6 +11,9 @@ CombatController::CombatController(Player &p, GameView &view, Quest &quest) : pl
 //Metodę razem z widokiem tworzyłem z użyciem chatu GPT (animacja lecącej strzały)
 void CombatController::mobFight(Enemy &enemy, sf::RenderWindow &window, BossType type) {
     //inicjacja początkowego czas lotu
+      sf::Event event;
+        while (window.pollEvent(event)) { //dodatkowa pętla ,żeby nie wyrzucało komunikatu o braku odpowiedzi w programie
+        }
     float deltaTime = 0.0f;
     while (!enemy.isDead() && !player.isDead()) {
         //inicjacja punktu początkowego
@@ -75,6 +78,9 @@ std::uniform_int_distribution<std::mt19937::result_type> enemyNumber(1, 4);
 }
 
 void CombatController::bossFight(Boss &boss, sf::RenderWindow &window, BossType type) {
+    sf::Event event;
+        while (window.pollEvent(event)) {
+        }
     int baseArmor = player.getArmor();
     float intPosX = 250.0f;
     float deltaTime = 0.0f;
