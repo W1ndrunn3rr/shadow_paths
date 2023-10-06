@@ -1,4 +1,3 @@
-# PO23_PN09_275409
 
 Nazwa robocza : Shadow Paths
 
