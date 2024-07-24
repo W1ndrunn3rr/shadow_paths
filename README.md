@@ -36,7 +36,7 @@ C:\lib
 
 If you are using a different path, you will need to change the path in the CMakeLists.txt file.
 
-## 4.RUNNING THE game
+## 4.RUNNING THE GAME
 To run the game, you need to compile the source code using CMake and make. Go to build directory and run the following commands:
 
 ```bash
